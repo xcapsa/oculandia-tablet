@@ -326,5 +326,56 @@ class Main(unittest.TestCase):
         self.assertEqual(json.loads(self.out.read_text("utf-8"))["eventi"][0]["img_v"], "")
 
 
+
+class FilmESportTest(unittest.TestCase):
+    def setUp(self):
+        self.home = {"items": [
+            {"date": "2026-11-15", "end_date": "2026-11-15", "title": "Belgio–Italia · Insieme su Bigscreen", "detail": "20:45 · Bigscreen",
+             "image": "/assets/images/belgio.jpg", "url": "/evento?id=belgio-italia-20261115"},
+            {"date": "2026-11-21", "title": "Parma – Roma", "detail": "18:00 · Bigscreen", "image": "/assets/images/parma.webp",
+             "url": "/evento?id=sports-parma-roma"},
+            {"date": "2026-11-09", "end_date": "2026-11-22", "title": "Eleven Table Tennis", "detail": "Orari liberi",
+             "image": "/assets/images/eleven.webp", "url": "/evento?id=atlasgate-eleven"}]}
+        self.recurring = {"items": [{"id": "serie-1", "date": "2026-11-16", "time": "21:00", "title": "Anime Night", "platform": "Bigscreen",
+                                     "description": "**Lunedì** sera", "image_url": "https://oculandiavr.it/a.jpg"}]}
+        self.sports = [{"id": "sports-parma-roma", "date": "2026-11-21", "time": "18:00", "title": "Parma – Roma", "sport": "football"},
+                       {"id": "sports-vecchia", "date": "2026-09-05", "time": "16:00", "title": "Gara passata"}]
+
+    def test_film_ricorrenti_e_sport_entrano_nel_feed(self):
+        rows = bf.extra_rows(self.home, self.recurring, self.sports)
+        out = bf.build_events([], TODAY, rows)
+        tipi = {item["titolo"]: item["tipo"] for item in out}
+        self.assertEqual(tipi, {"Belgio–Italia · Insieme su Bigscreen": "Film", "Anime Night": "Film", "Parma – Roma": "Sport"})
+        anime = next(item for item in out if item["titolo"] == "Anime Night")
+        self.assertEqual((anime["ora"], anime["dove"], anime["testo"]), ("21:00", "Bigscreen", "Lunedì sera"))
+
+    def test_la_partita_prende_la_locandina_della_home(self):
+        out = bf.build_events([], TODAY, bf.extra_rows(self.home, None, self.sports))
+        partita = next(item for item in out if item["titolo"] == "Parma – Roma")
+        self.assertEqual(partita["_fonte"], "https://oculandiavr.it/assets/images/parma.webp")
+        self.assertEqual(partita["link"], "https://oculandiavr.it/evento?id=sports-parma-roma")
+
+    def test_la_stessa_serata_da_due_fonti_conta_una_volta(self):
+        rows = bf.extra_rows(self.home, None, self.sports) + bf.extra_rows(self.home, None, self.sports)
+        self.assertEqual(len(bf.build_events([], TODAY, rows)), 2)
+
+    def test_un_po_di_tutto_anche_con_molti_tornei(self):
+        tornei = [{"date": f"2026-11-{15 + n:02d}", "title": f"Torneo {n}", "type": "tournament"} for n in range(14)]
+        sport = [{"id": f"s{n}", "date": f"2026-12-{1 + n:02d}", "time": "20:45", "title": f"Partita {n}"} for n in range(10)]
+        film = {"items": [{"id": f"f{n}", "date": f"2026-12-{10 + n:02d}", "time": "21:00", "title": f"Film {n}", "platform": "Bigscreen"} for n in range(10)]}
+        out = bf.build_events(tornei, TODAY, bf.extra_rows(None, film, sport))
+        conta = {tipo: sum(1 for item in out if item["tipo"] == tipo) for tipo in ("Torneo", "Sport", "Film")}
+        self.assertEqual(len(out), bf.MAX_EVENTS)
+        self.assertEqual(conta, {"Torneo": 4, "Sport": 4, "Film": 4})
+        self.assertEqual([item["giorno"] for item in out], sorted(item["giorno"] for item in out))
+
+    def test_le_serate_troppo_lontane_restano_fuori(self):
+        rows = [{"date": "2027-05-13", "title": "Closed Gate", "type": "community"}, {"date": "2026-11-20", "title": "Vicina"}]
+        self.assertEqual([item["titolo"] for item in bf.build_events(rows, TODAY)], ["Vicina"])
+
+    def test_fonti_mancanti_non_rompono(self):
+        self.assertEqual(bf.extra_rows(None, "x", {"items": "no"}), [])
+
+
 if __name__ == "__main__":
     unittest.main()

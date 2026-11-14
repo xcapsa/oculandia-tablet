@@ -35,11 +35,16 @@ from zoneinfo import ZoneInfo
 
 EVENTS_URL = "https://oculandiavr.it/data/events.json"
 NEWS_URL = "https://oculandiavr.it/api/ocunews-feed.php"
+# Le serate non stanno tutte in events.json: film e serate ricorrenti, sport e locandine hanno fonti loro.
+HOME_URL = "https://oculandiavr.it/api/home-events.php"
+RECURRING_URL = "https://oculandiavr.it/api/recurring-events.php"
+SPORTS_URL = "https://oculandiavr.it/data/sports-calendar.json"
 SITE = "https://oculandiavr.it"
 PUBLIC_BASE = "https://xcapsa.github.io/oculandia-tablet/feed/"
 ROME = ZoneInfo("Europe/Rome")
 
 MAX_EVENTS = 12  # sono anche le caselle immagine: evento-1.jpg … evento-12.jpg
+HORIZON_DAYS = 45  # oltre questa distanza una serata non interessa a chi è nel mondo adesso
 MAX_NEWS = 10  # news-1.jpg … news-10.jpg
 MAX_BYTES = 100_000  # un file piccolo si scarica in fretta anche da visore
 FEED_VERSION = 1
@@ -147,12 +152,65 @@ def when_label(day: dt.date, time: str, end: dt.date | None) -> str:
     return f"{start} · {time}" if time else start
 
 
-def build_events(raw: object, today: dt.date) -> list[dict]:
+def _rows(raw: object, key: str) -> list[dict]:
+    rows = raw.get(key) if isinstance(raw, dict) else raw
+    return [row for row in rows if isinstance(row, dict)] if isinstance(rows, list) else []
+
+
+def extra_rows(home: object = None, recurring: object = None, sports: object = None) -> list[dict]:
+    """Film, serate ricorrenti e sport, nella stessa forma di events.json.
+
+    home-events.php porta le locandine: servono a dare un'immagine alle partite del calendario sportivo.
+    """
+    posters, rows = {}, []
+    for item in _rows(home, "items"):
+        ident = urllib.parse.parse_qs(urllib.parse.urlsplit(str(item.get("url") or "")).query).get("id", [""])[0]
+        if ident:
+            posters[ident] = item.get("image")
+        if ident.startswith("sports-") or ident.startswith("atlasgate-") or not ident:
+            continue  # arrivano già dal calendario sportivo o da events.json
+        detail = str(item.get("detail") or "")
+        clock = re.match(r"(\d{2}:\d{2})", detail)
+        rows.append({"id": ident, "date": item.get("date"), "endDate": item.get("end_date"), "time": clock.group(1) if clock else "",
+                     "title": item.get("title"), "type": "film" if "bigscreen" in detail.lower() else "community",
+                     "platform": detail.split("·")[-1].strip() if "·" in detail else "", "description": "",
+                     "url": item.get("url"), "image_url": item.get("image")})
+    for item in _rows(recurring, "items"):
+        text = re.sub(r"[*_#`]+", "", str(item.get("description") or ""))
+        rows.append({"id": item.get("id"), "date": item.get("date"), "time": item.get("time"), "title": item.get("title"),
+                     "type": "film" if str(item.get("platform") or "").lower() == "bigscreen" else "meetup",
+                     "platform": item.get("platform"), "description": text, "url": "/events?tipo=film",
+                     "image_url": item.get("image_url")})
+    for item in _rows(sports, "events"):
+        ident = str(item.get("id") or "")
+        rows.append({"id": ident, "date": item.get("date"), "time": item.get("time"), "title": item.get("title"), "type": "sport",
+                     "platform": "Bigscreen", "description": item.get("description"),
+                     "url": f"/evento?id={urllib.parse.quote(ident)}" if ident else "/events?tipo=sport",
+                     "image_url": item.get("image_url") or posters.get(ident)})
+    return rows
+
+
+def pick_balanced(items: list[dict], count: int) -> list[dict]:
+    """Un po' di tutto: a turno un torneo, una partita, una serata, sempre partendo dalla più vicina."""
+    groups: dict[str, list[dict]] = {}
+    for item in items:
+        groups.setdefault(item["tipo"], []).append(item)
+    queues = sorted(groups.values(), key=lambda group: (group[0]["giorno"], group[0]["ora"] or "99:99"))
+    chosen = []
+    while len(chosen) < count and any(queues):
+        for queue in queues:
+            if queue and len(chosen) < count:
+                chosen.append(queue.pop(0))
+    chosen.sort(key=lambda item: (item["giorno"], item["ora"] or "99:99", item["titolo"]))
+    return chosen
+
+
+def build_events(raw: object, today: dt.date, extra: list[dict] | None = None) -> list[dict]:
     rows = raw.get("events") if isinstance(raw, dict) else raw
     if not isinstance(rows, list):
         raise FeedError("calendario eventi non valido")
-    upcoming = []
-    for row in rows:
+    upcoming, seen = [], set()
+    for row in list(rows) + list(extra or []):
         if not isinstance(row, dict):
             continue
         day = parse_day(row.get("date"))
@@ -162,6 +220,12 @@ def build_events(raw: object, today: dt.date) -> list[dict]:
         end = parse_day(row.get("endDate"))
         if (end or day) < today:
             continue  # già passato
+        if (day - today).days > HORIZON_DAYS:
+            continue  # troppo lontano
+        key = (day.isoformat(), re.sub(r"[^a-z0-9]+", "", title.lower()))
+        if key in seen:
+            continue  # la stessa serata da due fonti
+        seen.add(key)
         time = str(row.get("time") or "")
         time = time if re.fullmatch(r"\d{2}:\d{2}", time) else ""
         kind = str(row.get("type") or "").lower()
@@ -187,7 +251,7 @@ def build_events(raw: object, today: dt.date) -> list[dict]:
             }
         )
     upcoming.sort(key=lambda item: (item["giorno"], item["ora"] or "99:99", item["titolo"]))
-    return upcoming[:MAX_EVENTS]
+    return pick_balanced(upcoming, MAX_EVENTS)
 
 
 def build_news(raw: object) -> list[dict]:
@@ -252,10 +316,11 @@ def assign_slots(items: list[dict], previous: object, count: int) -> None:
             item["img"] = next(free)
 
 
-def build_feed(events_raw: object, news_raw: object, now: dt.datetime, previous: object = None) -> dict:
+def build_feed(events_raw: object, news_raw: object, now: dt.datetime, previous: object = None,
+               extra: list[dict] | None = None) -> dict:
     local = now.astimezone(ROME)
     before = previous if isinstance(previous, dict) else {}
-    events = build_events(events_raw, local.date())
+    events = build_events(events_raw, local.date(), extra)
     news = build_news(news_raw)
     assign_slots(events, before.get("eventi"), MAX_EVENTS)
     assign_slots(news, before.get("news"), MAX_NEWS)
@@ -439,6 +504,15 @@ def same_content(new: bytes, old: object) -> bool:
     return fresh == old
 
 
+def optional_json(fetch: Fetch, url: str) -> object:
+    """Una fonte in più che non risponde non deve fermare il feed: si va avanti senza."""
+    try:
+        return json.loads(fetch(url))
+    except (OSError, ValueError) as error:
+        print(f"fonte saltata ({url}): {error}", file=sys.stderr)
+        return None
+
+
 def read_previous(path: Path) -> object:
     try:
         return json.loads(path.read_text("utf-8"))
@@ -459,7 +533,8 @@ def main(argv: list[str] | None = None, fetch: Fetch = fetch_bytes, now: dt.date
     try:
         events_raw = json.loads(args.events.read_text("utf-8")) if args.events else json.loads(fetch(EVENTS_URL))
         news_raw = json.loads(args.news.read_text("utf-8")) if args.news else json.loads(fetch(NEWS_URL))
-        feed = build_feed(events_raw, news_raw, now or dt.datetime.now(dt.timezone.utc), previous)
+        extra = [] if args.events else extra_rows(*(optional_json(fetch, url) for url in (HOME_URL, RECURRING_URL, SPORTS_URL)))
+        feed = build_feed(events_raw, news_raw, now or dt.datetime.now(dt.timezone.utc), previous, extra)
         encode(feed)  # controlla la misura prima di toccare le immagini
         if args.no_img:
             keep_image_versions(feed, img_dir)
