@@ -1,43 +1,46 @@
-# Da dove partire (per chi monta il tablet nel mondo)
+# Da dove partire
 
-Ciao Kill. Qui trovi cosa è già pronto e cosa serve da te.
+Ciao Kill. Questa è la strada intera, dall'inizio alla prova. I dettagli di ogni passo sono in [`unity-setup.md`](unity-setup.md), con gli stessi numeri.
 
-## Cosa è pronto
+## Cosa fa il tablet
 
-- **Il feed**: `feed/tablet.json`, un file di testo con i prossimi 12 eventi e le ultime 10 news del sito. Pesa circa 6 kB. I campi sono spiegati in `docs/formato-feed.md`.
-- **Lo script**: `unity/Assets/OculandiaTablet/Scripts/OculandiaTabletFeed.cs` (UdonSharp). Scarica il feed, lo legge e riempie i testi del tablet. Si riaggiorna da solo.
-- **I test del feed**: 10, passano tutti.
+Mostra nel mondo VRChat i prossimi eventi e le ultime news di [oculandiavr.it](https://oculandiavr.it/).
+Tre schede: **Eventi**, **News**, **Info**. Quattro righe per pagina, con immagine. Tocchi una riga e si apre il dettaglio con il testo e l'indirizzo da scrivere nel browser.
 
-## Cosa non è pronto
+Vuoi vederlo prima di aprire Unity? Apri l'anteprima: <https://xcapsa.github.io/oculandia-tablet/anteprima/> (sarà attiva quando questo ramo arriva su `main`; prima la apri in locale, vedi sotto).
 
-- Lo script **non è mai stato compilato né provato in Unity**. È scritto dalla documentazione di VRChat: aspettati qualche correzione.
-- Il feed non ha ancora un indirizzo pubblico fisso (vedi «L'indirizzo del feed»).
-- Non c'è nessuna grafica: lo script riempie i testi che gli colleghi tu.
+## Il percorso
 
-## Cosa serve da te
+1. **Installa** Unity 2022.3.22f1 e il pacchetto VRChat SDK - Worlds dalla Creator Companion. UdonSharp è già dentro l'SDK.
+2. **Importa TextMeshPro**: menu Window, TextMeshPro, Import TMP Essential Resources.
+3. **Copia la cartella** `unity/Assets/OculandiaTablet` di questo repo dentro `Assets` del progetto del mondo.
+4. **Seleziona il tablet che esiste già** nella Hierarchy (l'oggetto dello schermo). Se non selezioni niente, il tablet nasce al centro della scena.
+5. **Premi Oculandia, Crea tablet.** La prima volta prepara i programmi UdonSharp e ti chiede di premere di nuovo dopo la compilazione. La seconda volta crea tutto: grafica, script, collegamenti, indirizzi, prefab.
+6. **Sistema posizione e misura** sopra lo schermo del tablet vecchio.
+7. **Premi Oculandia, Controlla collegamenti.** Nella Console deve comparire «collegamenti a posto».
+8. **Prova in ClientSim**: premi Play.
+9. **Prova in VRChat** con Build & Test.
+10. **Spunta la lista di controllo** in `unity-setup.md` e dicci com'è andata.
 
-1. Copia `unity/Assets/OculandiaTablet` nel progetto del mondo.
-2. Segui `docs/unity-setup.md`: è la lista dei passi e delle prove.
-3. Dicci cosa non compila o non funziona: apri una issue qui, con l'errore di UdonSharp o uno screenshot.
+Non devi scrivere codice né trascinare riferimenti. Se qualcosa non va, guarda la tabella «Se succede questo» in `unity-setup.md`.
 
-Se preferisci cambiare lo script a modo tuo, fallo pure: hai i permessi di scrittura. Lavora su un ramo e apri una pull request.
+## Cosa è pronto e cosa no
 
-## L'indirizzo del feed
+| Pezzo | Stato |
+| --- | --- |
+| Feed con eventi, news e immagini | Funziona. Si aggiorna da solo ogni 30 minuti. |
+| Anteprima nel browser | Funziona. |
+| Script del tablet e menu Oculandia | Scritti dalla documentazione di VRChat. **Mai compilati in Unity**: nessuno di noi aveva Unity a disposizione. |
 
-Per provare subito in Unity:
+Per questo esiste [`da-verificare-in-unity.md`](da-verificare-in-unity.md): l'elenco dei punti in cui potresti trovare un errore e cosa fare.
 
-1. Copia il contenuto di `feed/tablet.json` in un posto che puoi raggiungere con un indirizzo web (per esempio un Gist pubblico di GitHub, pulsante «Raw»).
-2. Metti quell'indirizzo in `feedUrl`.
-3. In VRChat attiva «Allow Untrusted URLs» se l'indirizzo non è tra quelli fidati.
+## Anteprima in locale
 
-L'indirizzo definitivo lo decide Rolf: GitHub Pages di questo repo (fidato da VRChat, ma il repo deve diventare pubblico) oppure il sito `oculandiavr.it` (ogni giocatore deve attivare «Allow Untrusted URLs»).
+```sh
+python3 -m http.server 8080
+```
 
-## I limiti di VRChat da ricordare
-
-- Il mondo può solo **leggere** testo e immagini. Non può inviare dati al sito.
-- Al massimo una richiesta ogni 5 secondi, contando tutti gli script del mondo.
-- L'indirizzo va scritto nell'editor: non si può comporre mentre il mondo gira.
-- Non esiste un login «Accedi con VRChat».
+Dalla cartella del repo. Poi apri `http://localhost:8080/anteprima/`.
 
 ## Le idee per dopo
 
