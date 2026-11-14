@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anteprima del tablet di Oculandia</title>
+<meta name="description" content="Anteprima nel browser del tablet di Oculandia per VRChat: stesse misure, colori e dati del tablet nel mondo.">
+<style>
+  /* Stesse misure del costruttore Unity: tela 1200 x 800 punti, coordinate dalla cima a sinistra. */
+  :root {
+    --fondo: #0e1712; --superficie: #102016; --bordo: #1d3526; --verde: #8ce596;
+    --chiaro: #eef6f0; --spento: #9db5a4; --azzurro: #77d6ed; --rosso: #ff4d5d; --vuoto: #162a1d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #050907; color: var(--chiaro);
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px; }
+  .cornice { width: min(1200px, calc(100vw - 32px), calc((100vh - 80px) * 1.5)); aspect-ratio: 3 / 2; position: relative; }
+  .tela { position: absolute; left: 0; top: 0; width: 1200px; height: 800px; transform-origin: 0 0;
+    background: var(--fondo); overflow: hidden; border-radius: 6px; box-shadow: 0 0 0 10px #1a1f1c, 0 20px 60px #000; }
+  .a { position: absolute; }
+  .testo { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; }
+  .a-capo { white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  .grassetto { font-weight: 700; }
+  .centro { text-align: center; }
+  button { font: inherit; border: 0; padding: 0; cursor: pointer; color: inherit; }
+  .pulsante { position: absolute; background: var(--bordo); color: var(--chiaro); font-weight: 700; font-size: 22px; }
+  .pulsante:hover { filter: brightness(0.92); }
+  .scheda { background: var(--superficie); }
+  .scheda.attiva { background: var(--verde); color: var(--fondo); }
+  .riga { position: absolute; left: 24px; width: 1152px; height: 140px; background: var(--superficie); text-align: left; }
+  .riquadro { position: absolute; background: var(--vuoto); background-size: cover; background-position: center; }
+  .in-corso { position: absolute; width: 130px; height: 34px; background: var(--rosso); color: #fff;
+    font-weight: 700; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+  .nascosto { display: none !important; }
+  .nota { color: var(--spento); font-size: 14px; max-width: 1200px; text-align: center; }
+  .nota a { color: var(--verde); }
+  input.campo { position: absolute; background: var(--fondo); color: var(--chiaro); border: 0; font: 18px Arial, sans-serif; padding: 0 12px; }
+</style>
+</head>
+<body>
+<div class="cornice" id="cornice">
+  <div class="tela" id="tela" role="application" aria-label="Tablet di Oculandia">
+    <!-- Intestazione -->
+    <div class="a" style="left:0;top:0;width:1200px;height:96px;background:var(--superficie)"></div>
+    <div class="a testo grassetto" style="left:32px;top:14px;width:420px;height:44px;font-size:34px;color:var(--verde)">OCULANDIA</div>
+    <div class="a testo" style="left:32px;top:56px;width:420px;height:28px;font-size:18px;color:var(--spento)">Eventi e news dalla community VR italiana</div>
+    <button class="pulsante scheda" data-scheda="0" style="left:560px;top:20px;width:150px;height:56px">Eventi</button>
+    <button class="pulsante scheda" data-scheda="1" style="left:722px;top:20px;width:150px;height:56px">News</button>
+    <button class="pulsante scheda" data-scheda="2" style="left:884px;top:20px;width:150px;height:56px">Info</button>
+    <button class="pulsante" id="aggiorna" style="left:1050px;top:20px;width:126px;height:56px">Aggiorna</button>
+
+    <!-- Pagina elenco -->
+    <div id="elenco">
+      <div id="righe"></div>
+      <div class="a testo centro" id="vuoto" style="left:24px;top:360px;width:1152px;height:60px;font-size:26px;color:var(--spento)">Carico eventi e news…</div>
+      <button class="pulsante" id="indietro" style="left:24px;top:708px;width:190px;height:50px">Indietro</button>
+      <div class="a testo centro" id="numero" style="left:400px;top:716px;width:400px;height:34px;font-size:22px">Pagina 1 di 1</div>
+      <button class="pulsante" id="avanti" style="left:986px;top:708px;width:190px;height:50px">Avanti</button>
+    </div>
+
+    <!-- Pagina dettaglio -->
+    <div id="dettaglio" class="nascosto">
+      <div class="a" style="left:24px;top:112px;width:1152px;height:590px;background:var(--superficie)"></div>
+      <div class="riquadro" id="d-locandina" style="left:44px;top:132px;width:440px;height:550px"></div>
+      <div class="riquadro" id="d-copertina" style="left:44px;top:132px;width:440px;height:248px"></div>
+      <div class="a a-capo grassetto" id="d-titolo" style="left:512px;top:128px;width:640px;height:80px;font-size:30px;-webkit-line-clamp:2;line-height:1.3"></div>
+      <div class="a testo" id="d-quando" style="left:512px;top:228px;width:640px;height:30px;font-size:22px;color:var(--azzurro)"></div>
+      <div class="in-corso" id="d-in-corso" style="left:512px;top:264px">IN CORSO</div>
+      <div class="a a-capo" id="d-testo" style="left:512px;top:308px;width:640px;height:230px;font-size:20px;-webkit-line-clamp:9;line-height:1.25"></div>
+      <div class="a testo" style="left:512px;top:548px;width:640px;height:24px;font-size:16px;color:var(--spento)">VRChat non apre i link. Scrivi questo indirizzo nel browser:</div>
+      <div class="a testo grassetto" id="d-link" style="left:512px;top:574px;width:640px;height:34px;font-size:24px;color:var(--verde)"></div>
+      <input class="campo" id="d-campo" readonly aria-label="Indirizzo intero" style="left:512px;top:616px;width:640px;height:44px">
+      <button class="pulsante" id="chiudi" style="left:24px;top:708px;width:260px;height:50px">Torna all'elenco</button>
+    </div>
+
+    <!-- Pagina info -->
+    <div id="info" class="nascosto">
+      <div class="a" style="left:24px;top:112px;width:1152px;height:590px;background:var(--superficie)"></div>
+      <div class="a testo grassetto" style="left:56px;top:136px;width:1088px;height:44px;font-size:30px">Oculandia, la community italiana della realtà virtuale</div>
+      <div class="a" style="left:56px;top:196px;width:1088px;height:380px;font-size:21px;line-height:1.2;white-space:pre-line">Eventi, serate, tornei e news VR in italiano.
+
+Sito: oculandiavr.it
+Calendario: oculandiavr.it/events
+
+Come funziona questo tablet
+Eventi e news arrivano dal sito. Il tablet li controlla da solo ogni 10 minuti.
+Le immagini arrivano una alla volta: ci vuole qualche secondo.
+Tocca un evento o una news per leggere tutto.
+
+VRChat non apre i link: scrivi l'indirizzo nel browser del telefono o del PC.</div>
+      <div class="a testo" id="aggiornato" style="left:56px;top:640px;width:1088px;height:30px;font-size:18px;color:var(--azzurro)">Dati non ancora arrivati.</div>
+    </div>
+
+    <div class="a testo centro" id="stato" style="left:220px;top:764px;width:760px;height:26px;font-size:16px;color:var(--spento)">Carico eventi e news…</div>
+  </div>
+</div>
+<p class="nota">Anteprima nel browser del tablet di VRChat. Stesse misure (1200 × 800 punti), colori e dati del mondo.
+  Aggiungi <code>?lento</code> all'indirizzo per vedere le immagini arrivare una ogni 5 secondi, come in VRChat.
+  <a href="https://github.com/xcapsa/oculandia-tablet">Codice</a></p>
+
+<script>
+"use strict";
+// Stessa logica di OculandiaTabletSchermo.cs, in piccolo.
+const RIGHE = 4;
+const FEED = "../feed/tablet.json";
+const IMG = "../feed/img/";
+const LENTO = new URLSearchParams(location.search).has("lento");
+
+const $ = (id) => document.getElementById(id);
+const stato = { scheda: 0, pagina: 0, dettaglio: -1, feed: null };
+const pronte = new Set();   // immagini già arrivate (nome?versione)
+let coda = [];
+let giro = false;
+
+function adatta() {
+  const scala = $("cornice").clientWidth / 1200;
+  $("tela").style.transform = `scale(${scala})`;
+}
+addEventListener("resize", adatta);
+adatta();
+
+function el(tag, classi, stile, testo) {
+  const e = document.createElement(tag);
+  if (classi) e.className = classi;
+  if (stile) e.setAttribute("style", stile);
+  if (testo !== undefined) e.textContent = testo;
+  return e;
+}
+
+// Costruisce le quattro righe con le stesse coordinate del costruttore Unity.
+for (let r = 0; r < RIGHE; r++) {
+  const riga = el("button", "riga", `top:${112 + r * 148}px`);
+  riga.dataset.riga = r;
+  riga.innerHTML = `
+    <div class="vista-evento">
+      <div class="riquadro" style="left:0;top:0;width:112px;height:140px"></div>
+      <div class="a testo grassetto t" style="left:132px;top:12px;width:860px;height:42px;font-size:30px"></div>
+      <div class="a testo q" style="left:132px;top:58px;width:860px;height:30px;font-size:22px;color:var(--azzurro)"></div>
+      <div class="a testo d" style="left:132px;top:92px;width:860px;height:28px;font-size:20px;color:var(--spento)"></div>
+      <div class="in-corso" style="left:1006px;top:14px">IN CORSO</div>
+    </div>
+    <div class="vista-news">
+      <div class="riquadro" style="left:0;top:0;width:248px;height:140px"></div>
+      <div class="a a-capo grassetto t" style="left:268px;top:10px;width:864px;height:64px;font-size:25px;-webkit-line-clamp:2;line-height:1.25"></div>
+      <div class="a testo q" style="left:268px;top:76px;width:864px;height:26px;font-size:19px;color:var(--azzurro)"></div>
+      <div class="a testo d" style="left:268px;top:104px;width:864px;height:28px;font-size:18px;color:var(--spento)"></div>
+    </div>`;
+  riga.addEventListener("click", () => apriDettaglio(r));
+  $("righe").appendChild(riga);
+}
+
+const unisci = (a, b) => (a && b ? `${a} · ${b}` : a || b || "");
+const voci = () => (stato.feed && stato.scheda < 2 ? stato.feed[stato.scheda === 0 ? "eventi" : "news"] : []);
+const pagine = () => Math.max(1, Math.ceil(voci().length / RIGHE));
+const nascondi = (e, si) => e.classList.toggle("nascosto", si);
+
+function immagine(riquadro, tipo, voce) {
+  const nome = `${tipo === 0 ? "evento" : "news"}-${voce.img}.jpg?v=${voce.img_v}`;
+  if (pronte.has(nome) || !LENTO) {
+    riquadro.style.backgroundImage = `url("${IMG}${nome}")`;
+    pronte.add(nome);
+    return;
+  }
+  riquadro.style.backgroundImage = "";
+  if (!coda.includes(nome)) coda.push(nome);
+  if (!giro) avanza();
+}
+
+// Come in VRChat: una immagine ogni 5 secondi (solo con ?lento).
+function avanza() {
+  if (!coda.length) { giro = false; return; }
+  giro = true;
+  pronte.add(coda.shift());
+  disegna();
+  setTimeout(avanza, 5000);
+}
+
+function disegna() {
+  document.querySelectorAll(".scheda").forEach((b) => b.classList.toggle("attiva", Number(b.dataset.scheda) === stato.scheda));
+  const info = stato.scheda === 2;
+  const dettaglio = !info && stato.dettaglio >= 0;
+  nascondi($("info"), !info);
+  nascondi($("dettaglio"), !dettaglio);
+  nascondi($("elenco"), info || dettaglio);
+  if (info) {
+    $("aggiornato").textContent = stato.feed ? `Dati del ${stato.feed.aggiornato}` : "Dati non ancora arrivati.";
+  } else if (dettaglio) {
+    disegnaDettaglio();
+  } else {
+    disegnaElenco();
+  }
+}
+
+function disegnaElenco() {
+  const elenco = voci();
+  const evento = stato.scheda === 0;
+  if (LENTO) coda = [];
+  document.querySelectorAll(".riga").forEach((riga, r) => {
+    const voce = elenco[stato.pagina * RIGHE + r];
+    nascondi(riga, !voce);
+    if (!voce) return;
+    const vista = riga.querySelector(evento ? ".vista-evento" : ".vista-news");
+    nascondi(riga.querySelector(".vista-evento"), !evento);
+    nascondi(riga.querySelector(".vista-news"), evento);
+    vista.querySelector(".t").textContent = voce.titolo;
+    vista.querySelector(".q").textContent = evento ? voce.quando : unisci(voce.data, voce.cat);
+    vista.querySelector(".d").textContent = evento ? unisci(voce.tipo, voce.dove) : voce.riga;
+    if (evento) nascondi(vista.querySelector(".in-corso"), !voce.in_corso);
+    immagine(vista.querySelector(".riquadro"), stato.scheda, voce);
+  });
+  $("numero").textContent = `Pagina ${stato.pagina + 1} di ${pagine()}`;
+  nascondi($("indietro"), stato.pagina === 0);
+  nascondi($("avanti"), stato.pagina + 1 >= pagine());
+  let vuoto = "";
+  if (!stato.feed) vuoto = "Carico eventi e news…";
+  else if (!elenco.length) vuoto = evento ? "Nessun evento in programma. Guarda su oculandiavr.it" : "Nessuna news per ora.";
+  $("vuoto").textContent = vuoto;
+  nascondi($("vuoto"), !vuoto);
+}
+
+function disegnaDettaglio() {
+  const evento = stato.scheda === 0;
+  const voce = voci()[stato.dettaglio];
+  $("d-titolo").textContent = voce.titolo;
+  $("d-quando").textContent = evento ? unisci(voce.quando, unisci(voce.tipo, voce.dove)) : unisci(voce.data, voce.cat);
+  $("d-testo").textContent = voce.testo;
+  $("d-link").textContent = voce.link_corto;
+  $("d-campo").value = voce.link;
+  nascondi($("d-in-corso"), !(evento && voce.in_corso));
+  nascondi($("d-locandina"), !evento);
+  nascondi($("d-copertina"), evento);
+  if (LENTO) coda = [];
+  immagine($(evento ? "d-locandina" : "d-copertina"), stato.scheda, voce);
+}
+
+function apriScheda(n) { Object.assign(stato, { scheda: n, pagina: 0, dettaglio: -1 }); disegna(); }
+function apriDettaglio(r) {
+  const i = stato.pagina * RIGHE + r;
+  if (i < voci().length) { stato.dettaglio = i; disegna(); }
+}
+
+document.querySelectorAll(".scheda").forEach((b) => b.addEventListener("click", () => apriScheda(Number(b.dataset.scheda))));
+$("avanti").addEventListener("click", () => { if (stato.pagina + 1 < pagine()) stato.pagina++; disegna(); });
+$("indietro").addEventListener("click", () => { if (stato.pagina > 0) stato.pagina--; disegna(); });
+$("chiudi").addEventListener("click", () => { stato.dettaglio = -1; disegna(); });
+$("aggiorna").addEventListener("click", carica);
+
+async function carica() {
+  $("stato").textContent = "Carico eventi e news…";
+  try {
+    const risposta = await fetch(`${FEED}?t=${Date.now()}`, { cache: "no-store" });
+    if (!risposta.ok) throw new Error(`errore ${risposta.status}`);
+    const feed = await risposta.json();
+    if (feed.v !== 1 || !Array.isArray(feed.eventi) || !Array.isArray(feed.news)) throw new Error("formato che non conosco");
+    stato.feed = feed;
+    $("stato").textContent = `Dati del ${feed.aggiornato}`;
+  } catch (errore) {
+    $("stato").textContent = stato.feed
+      ? `Dati del ${stato.feed.aggiornato}. Ultimo controllo non riuscito.`
+      : `Non riesco a leggere il feed (${errore.message}).`;
+  }
+  if (stato.dettaglio >= voci().length) stato.dettaglio = -1;
+  if (stato.pagina >= pagine()) stato.pagina = pagine() - 1;
+  disegna();
+}
+
+// Per le prove automatiche: ?scheda=1 apre direttamente le News.
+const iniziale = Number(new URLSearchParams(location.search).get("scheda"));
+if (iniziale >= 0 && iniziale <= 2) stato.scheda = iniziale;
+disegna();
+carica();
+</script>
+</body>
+</html>

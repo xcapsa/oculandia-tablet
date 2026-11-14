@@ -342,7 +342,7 @@ public static class OculandiaTabletBuilder
         Pannello("Sfondo", p, 24, 112, 1152, 590, Superficie, false);
         s.dettaglioLocandina = Riquadro("Locandina", p, 44, 132, 440, 550);
         s.dettaglioCopertina = Riquadro("Copertina", p, 44, 132, 440, 248);
-        s.dettaglioTitolo = Testo("Titolo", p, 512, 128, 640, 96, "Titolo", 32, Chiaro, true);
+        s.dettaglioTitolo = Testo("Titolo", p, 512, 128, 640, 80, "Titolo", 30, Chiaro, true);
         s.dettaglioTitolo.enableWordWrapping = true;
         s.dettaglioQuando = Testo("Quando", p, 512, 228, 640, 30, "Quando", 22, Azzurro, false);
         s.dettaglioInCorso = Etichetta("In corso", p, 512, 264, 130, 34);
