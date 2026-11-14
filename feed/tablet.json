@@ -1,0 +1,189 @@
+{
+ "v": 1,
+ "generato": "2026-11-14T14:29:06+0100",
+ "aggiornato": "14 nov · 14:29",
+ "eventi": [
+  {
+   "titolo": "Eleven Table Tennis",
+   "quando": "lun 9 nov – 22 nov",
+   "giorno": "2026-11-09",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Individuale",
+   "in_corso": true,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Population: One",
+   "quando": "lun 9 nov – 22 nov",
+   "giorno": "2026-11-09",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": true,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Beat Saber",
+   "quando": "lun 7 dic – 20 dic",
+   "giorno": "2026-12-07",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Individuale",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Onward",
+   "quando": "lun 7 dic – 20 dic",
+   "giorno": "2026-12-07",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Contractors",
+   "quando": "lun 18 gen – 31 gen",
+   "giorno": "2027-01-18",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "The Thrill of the Fight 2",
+   "quando": "lun 18 gen – 31 gen",
+   "giorno": "2027-01-18",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Individuale",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Synth Riders",
+   "quando": "lun 15 feb – 28 feb",
+   "giorno": "2027-02-15",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Individuale",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Walkabout Mini Golf",
+   "quando": "lun 15 feb – 28 feb",
+   "giorno": "2027-02-15",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Battle Talent",
+   "quando": "lun 15 mar – 28 mar",
+   "giorno": "2027-03-15",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Onward",
+   "quando": "lun 15 mar – 28 mar",
+   "giorno": "2027-03-15",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Assetto Corsa Competizione",
+   "quando": "lun 12 apr – 25 apr",
+   "giorno": "2027-04-12",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Individuale",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  },
+  {
+   "titolo": "Beat Saber",
+   "quando": "lun 12 apr – 25 apr",
+   "giorno": "2027-04-12",
+   "ora": "",
+   "tipo": "Torneo",
+   "dove": "Squadre",
+   "in_corso": false,
+   "link": "https://discord.gg/MNbn9usjm9"
+  }
+ ],
+ "news": [
+  {
+   "titolo": "Sol Protocol arriva in accesso anticipato su PC VR",
+   "data": "14 nov",
+   "riga": "Il roguelike cooperativo spaziale Sol Protocol, generato proceduralmente, è arrivato in accesso anticipato su PC VR dopo l’uscita su Quest…",
+   "link": "https://oculandiavr.it/n/sol-protocol-accesso-6826c"
+  },
+  {
+   "titolo": "Blackmagic presenta un microfono per l’audio immersivo su Apple Vision Pro",
+   "data": "13 nov",
+   "riga": "Blackmagic Design ha annunciato un microfono professionale per registrare audio spaziale nei video immersivi, compatibile con Apple Vision…",
+   "link": "https://oculandiavr.it/n/blackmagic-microfono-aud-330c4"
+  },
+  {
+   "titolo": "Somnium Space potrebbe tornare su Steam Early Access a dicembre 2026",
+   "data": "11 nov",
+   "riga": "Somnium Space, piattaforma social VR riservata agli adulti, fu rimossa da Steam nel 2021, quando Valve eliminò i giochi legati alle…",
+   "link": "https://oculandiavr.it/n/somnium-space-potrebbe-93ca2"
+  },
+  {
+   "titolo": "Disney+ aggiunge 60 film in 3D e ambienti immersivi su Quest 3 e 3S",
+   "data": "11 nov",
+   "riga": "L’app Disney+ per Quest 3 e Quest 3S si aggiorna oggi con contenuti in 3D e ambienti immersivi sui visori Meta. Sono stati aggiunti 60…",
+   "link": "https://oculandiavr.it/n/disney-aggiunge-60-805ba"
+  },
+  {
+   "titolo": "The Great Flood: strategia in realtà mista su Quest, uscita annunciata per il 9 novembre",
+   "data": "10 nov",
+   "riga": "The Great Flood è un gioco strategico in realtà mista che porta eserciti in miniatura nella stanza del giocatore. Si compone una squadra…",
+   "link": "https://oculandiavr.it/n/the-great-flood-d6d2b"
+  },
+  {
+   "titolo": "SteamVR 2.19.2 corregge bug della beta nello streaming",
+   "data": "10 nov",
+   "riga": "Valve ha pubblicato una beta di SteamVR che corregge problemi nei menu e negli overlay introdotti dalla versione precedente, dedicata allo…",
+   "link": "https://oculandiavr.it/n/steamvr-2-19-168e7"
+  },
+  {
+   "titolo": "vrOS 3 collega Steam Frame a un PC Windows per pannelli e giochi VR",
+   "data": "8 nov",
+   "riga": "L’app di terze parti vrOS collega Steam Frame a un PC Windows. Nel visore mostra le finestre del desktop su pannelli spostabili e…",
+   "link": "https://oculandiavr.it/n/vros-3-collega-7ae1c"
+  },
+  {
+   "titolo": "VRChat: la nuova interfaccia Quick Menu è prevista nella versione 2026.4.2",
+   "data": "7 nov",
+   "riga": "VRChat sta preparando un nuovo aspetto per la pagina Here del Quick Menu e per i profili utente. Le azioni più usate e le persone presenti…",
+   "link": "https://oculandiavr.it/n/vrchat-interfaccia-quick-82c07"
+  },
+  {
+   "titolo": "EXD - Extra Dimensional migliora i controlli Steam Frame e aggiunge DLSS e FSR2",
+   "data": "7 nov",
+   "riga": "EXD - Extra Dimensional riceve un aggiornamento grafico che aggiunge il supporto diretto ai controller Steam Frame e nuove opzioni di…",
+   "link": "https://oculandiavr.it/n/exd-extra-dimensional-53638"
+  },
+  {
+   "titolo": "Bootstrap Island aggiunge la modalità Cargo Master",
+   "data": "5 nov",
+   "riga": "Cargo Master è una nuova modalità di Bootstrap Island. Per ottenere ricompense e scalare le classifiche globali, bisogna recuperare e…",
+   "link": "https://oculandiavr.it/n/bootstrap-island-aggiung-d72ff"
+  }
+ ]
+}

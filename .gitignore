@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
