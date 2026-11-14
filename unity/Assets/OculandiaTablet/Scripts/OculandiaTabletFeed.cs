@@ -1,10 +1,10 @@
-// Tablet di Oculandia: scarica il feed del sito e riempie le righe di eventi e news.
+// Tablet di Oculandia, parte 1 di 3: i dati.
+// Scarica feed/tablet.json, lo legge e lo tiene in memoria per lo schermo.
+// Si riaggiorna da solo e riprova se qualcosa va storto.
 //
-// Richiede VRChat Worlds SDK 3.x con UdonSharp, TextMeshPro e VRCJson (VRC.SDK3.Data).
-// Scritto leggendo la documentazione: NON è stato ancora compilato né provato in Unity.
-// Vedi docs/unity-setup.md per i passi di prova.
+// Tutto è locale al giocatore: niente sincronizzazione.
+// Scritto dalla documentazione di VRChat: vedi docs/da-verificare-in-unity.md.
 
-using TMPro;
 using UdonSharp;
 using UnityEngine;
 using VRC.SDK3.Data;
@@ -15,163 +15,180 @@ using VRC.Udon.Common.Interfaces;
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class OculandiaTabletFeed : UdonSharpBehaviour
 {
-    [Header("Feed")]
-    [Tooltip("Indirizzo del file feed/tablet.json. Va scritto qui nell'editor: il mondo non può comporlo mentre gira.")]
+    [Tooltip("Indirizzo di feed/tablet.json. Va scritto qui nell'editor: il mondo non può comporlo mentre gira.")]
     public VRCUrl feedUrl;
 
-    [Tooltip("Ogni quanti minuti riscaricare. VRChat consente al massimo una richiesta ogni 5 secondi in tutto il mondo.")]
+    [Tooltip("Ogni quanti minuti riscaricare il feed.")]
     [Range(2, 60)]
-    public int refreshMinutes = 10;
+    public int minutiAggiornamento = 10;
 
-    [Header("Righe eventi (stessa lunghezza)")]
-    public TextMeshProUGUI[] eventTitles;
-    public TextMeshProUGUI[] eventWhen;
-    public TextMeshProUGUI[] eventWhere;
-    public GameObject[] eventRows;
+    [Tooltip("Lo schermo da avvisare quando arrivano i dati.")]
+    public OculandiaTabletSchermo schermo;
 
-    [Header("Righe news (stessa lunghezza)")]
-    public TextMeshProUGUI[] newsTitles;
-    public TextMeshProUGUI[] newsDates;
-    public TextMeshProUGUI[] newsLines;
-    public GameObject[] newsRows;
+    private const int VersioneNota = 1;
+    private const float Passo = 5f;            // ogni quanti secondi controllo se è ora di scaricare
+    private const float PausaMinima = 10f;     // VRChat consente una richiesta di testo ogni 5 secondi: resto largo
 
-    [Header("Stato")]
-    public TextMeshProUGUI statusText;
-
-    private const int SupportedVersion = 1;
-    private bool _loading;
-    private bool _hasData;
+    private DataList _eventi;
+    private DataList _news;
+    private string _aggiornato = "";
+    private bool _scaricando;
+    private bool _haDati;
+    private int _falliti;
+    private float _prossimo;
+    private float _ultima = -100f;
 
     private void Start()
     {
-        SetStatus("Carico eventi e news…");
-        Load();
+        Stato("Carico eventi e news…");
+        Tic();
     }
 
-    // Si può collegare anche a un pulsante "Aggiorna" del tablet.
-    public void Load()
+    // Un solo orologio per tutto: così non restano richieste doppie in giro.
+    public void Tic()
     {
-        if (_loading) return;
-        if (feedUrl == null || string.IsNullOrEmpty(feedUrl.Get()))
+        // Se VRChat non ha mai risposto, dopo un minuto mi considero libero.
+        if (_scaricando && Time.time - _ultima > 60f) _scaricando = false;
+        if (!_scaricando && Time.time >= _prossimo) Scarica();
+        SendCustomEventDelayedSeconds(nameof(Tic), Passo);
+    }
+
+    // Collegato al pulsante «Aggiorna».
+    public void AggiornaOra()
+    {
+        if (_scaricando)
         {
-            SetStatus("Manca l'indirizzo del feed.");
+            Stato("Sto già caricando…");
             return;
         }
-        _loading = true;
+        if (Time.time - _ultima < PausaMinima)
+        {
+            Stato("Appena controllato. Riprova tra qualche secondo.");
+            return;
+        }
+        Stato("Carico eventi e news…");
+        Scarica();
+    }
+
+    private void Scarica()
+    {
+        if (feedUrl == null || string.IsNullOrEmpty(feedUrl.Get()))
+        {
+            Stato("Manca l'indirizzo del feed. In Unity usa il menu Oculandia, Controlla collegamenti.");
+            _prossimo = Time.time + 60f;
+            return;
+        }
+        _scaricando = true;
+        _ultima = Time.time;
         VRCStringDownloader.LoadUrl(feedUrl, (IUdonEventReceiver)this);
     }
 
     public override void OnStringLoadSuccess(IVRCStringDownload result)
     {
-        _loading = false;
-        if (Apply(result.Result))
+        _scaricando = false;
+        if (!Leggi(result.Result))
         {
-            _hasData = true;
+            Fallito("Il feed ha un formato che non conosco.", "");
+            return;
         }
-        else if (!_hasData)
-        {
-            SetStatus("Il sito ha risposto in modo inatteso. Riprovo tra poco.");
-        }
-        ScheduleNext();
+        _haDati = true;
+        _falliti = 0;
+        _prossimo = Time.time + Mathf.Max(2, minutiAggiornamento) * 60f;
+        Stato("Dati del " + _aggiornato);
+        if (schermo != null) schermo.DatiPronti();
     }
 
     public override void OnStringLoadError(IVRCStringDownload result)
     {
-        _loading = false;
-        // Se abbiamo già dei dati restano a schermo: meglio una bacheca di dieci minuti fa che vuota.
-        if (!_hasData)
-        {
-            SetStatus("Non riesco a leggere il sito. Se l'indirizzo non è tra quelli fidati, attiva «Allow Untrusted URLs» nelle impostazioni di VRChat.");
-        }
-        ScheduleNext();
+        _scaricando = false;
+        Fallito("Non riesco a leggere il feed (errore " + result.ErrorCode + ").", result.Error);
     }
 
-    private void ScheduleNext()
+    // Le prime tre volte riprovo presto (20, 40, 60 secondi), poi torno al ritmo normale.
+    private void Fallito(string perche, string dettaglio)
     {
-        SendCustomEventDelayedSeconds(nameof(Load), Mathf.Max(2, refreshMinutes) * 60f);
+        _falliti++;
+        float attesa = _falliti <= 3 ? 20f * _falliti : Mathf.Max(2, minutiAggiornamento) * 60f;
+        _prossimo = Time.time + attesa;
+        Debug.LogWarning("[OculandiaTablet] " + perche + " " + dettaglio);
+        if (_haDati)
+        {
+            // Meglio una bacheca di dieci minuti fa che una vuota.
+            Stato("Dati del " + _aggiornato + ". Ultimo controllo non riuscito.");
+        }
+        else
+        {
+            Stato(perche + " Riprovo tra " + (int)attesa + " secondi.");
+        }
     }
 
-    private bool Apply(string json)
+    private bool Leggi(string json)
     {
         if (string.IsNullOrEmpty(json)) return false;
-        if (!VRCJson.TryDeserializeFromJson(json, out DataToken root)) return false;
-        if (root.TokenType != TokenType.DataDictionary) return false;
-        DataDictionary feed = root.DataDictionary;
+        if (!VRCJson.TryDeserializeFromJson(json, out DataToken radice)) return false;
+        if (radice.TokenType != TokenType.DataDictionary) return false;
+        DataDictionary feed = radice.DataDictionary;
 
-        // I numeri JSON arrivano come Double.
-        if (!feed.TryGetValue("v", TokenType.Double, out DataToken version)) return false;
-        if ((int)version.Double != SupportedVersion) return false;
+        // I numeri JSON arrivano sempre come Double.
+        if (!feed.TryGetValue("v", TokenType.Double, out DataToken versione)) return false;
+        if ((int)versione.Double != VersioneNota) return false;
+        if (!feed.TryGetValue("eventi", TokenType.DataList, out DataToken eventi)) return false;
+        if (!feed.TryGetValue("news", TokenType.DataList, out DataToken news)) return false;
 
-        if (feed.TryGetValue("eventi", TokenType.DataList, out DataToken events))
-        {
-            FillEvents(events.DataList);
-        }
-        if (feed.TryGetValue("news", TokenType.DataList, out DataToken news))
-        {
-            FillNews(news.DataList);
-        }
-        SetStatus("Aggiornato: " + Text(feed, "aggiornato"));
+        _eventi = eventi.DataList;
+        _news = news.DataList;
+        if (feed.TryGetValue("aggiornato", TokenType.String, out DataToken quando)) _aggiornato = quando.String;
         return true;
     }
 
-    private void FillEvents(DataList list)
+    // ------------------------------------------------------------------
+    // Letture per lo schermo. tipo: 0 = eventi, 1 = news.
+
+    public bool HaDati()
     {
-        int rows = eventTitles == null ? 0 : eventTitles.Length;
-        for (int i = 0; i < rows; i++)
-        {
-            bool has = i < list.Count && list[i].TokenType == TokenType.DataDictionary;
-            Show(eventRows, i, has);
-            if (!has) continue;
-            DataDictionary item = list[i].DataDictionary;
-            string title = Text(item, "titolo");
-            if (Flag(item, "in_corso")) title = "● " + title;
-            Set(eventTitles, i, title);
-            Set(eventWhen, i, Text(item, "tipo") + " · " + Text(item, "quando"));
-            Set(eventWhere, i, Text(item, "dove"));
-        }
+        return _haDati;
     }
 
-    private void FillNews(DataList list)
+    public string Aggiornato()
     {
-        int rows = newsTitles == null ? 0 : newsTitles.Length;
-        for (int i = 0; i < rows; i++)
-        {
-            bool has = i < list.Count && list[i].TokenType == TokenType.DataDictionary;
-            Show(newsRows, i, has);
-            if (!has) continue;
-            DataDictionary item = list[i].DataDictionary;
-            Set(newsTitles, i, Text(item, "titolo"));
-            Set(newsDates, i, Text(item, "data"));
-            Set(newsLines, i, Text(item, "riga"));
-        }
+        return _aggiornato;
     }
 
-    private string Text(DataDictionary item, string key)
+    public int Conta(int tipo)
     {
-        if (item.TryGetValue(key, TokenType.String, out DataToken value)) return value.String;
+        DataList lista = tipo == 0 ? _eventi : _news;
+        return lista == null ? 0 : lista.Count;
+    }
+
+    public string Campo(int tipo, int indice, string chiave)
+    {
+        DataList lista = tipo == 0 ? _eventi : _news;
+        if (lista == null || indice < 0 || indice >= lista.Count) return "";
+        if (!lista.TryGetValue(indice, TokenType.DataDictionary, out DataToken voce)) return "";
+        if (voce.DataDictionary.TryGetValue(chiave, TokenType.String, out DataToken valore)) return valore.String;
         return "";
     }
 
-    private bool Flag(DataDictionary item, string key)
+    public bool Vero(int tipo, int indice, string chiave)
     {
-        if (item.TryGetValue(key, TokenType.Boolean, out DataToken value)) return value.Boolean;
+        DataList lista = tipo == 0 ? _eventi : _news;
+        if (lista == null || indice < 0 || indice >= lista.Count) return false;
+        if (!lista.TryGetValue(indice, TokenType.DataDictionary, out DataToken voce)) return false;
+        if (voce.DataDictionary.TryGetValue(chiave, TokenType.Boolean, out DataToken valore)) return valore.Boolean;
         return false;
     }
 
-    private void Set(TextMeshProUGUI[] labels, int index, string text)
+    public int Numero(int tipo, int indice, string chiave)
     {
-        if (labels == null || index >= labels.Length || labels[index] == null) return;
-        labels[index].text = text;
+        DataList lista = tipo == 0 ? _eventi : _news;
+        if (lista == null || indice < 0 || indice >= lista.Count) return 0;
+        if (!lista.TryGetValue(indice, TokenType.DataDictionary, out DataToken voce)) return 0;
+        if (voce.DataDictionary.TryGetValue(chiave, TokenType.Double, out DataToken valore)) return (int)valore.Double;
+        return 0;
     }
 
-    private void Show(GameObject[] rows, int index, bool visible)
+    private void Stato(string testo)
     {
-        if (rows == null || index >= rows.Length || rows[index] == null) return;
-        rows[index].SetActive(visible);
-    }
-
-    private void SetStatus(string text)
-    {
-        if (statusText != null) statusText.text = text;
+        if (schermo != null) schermo.Stato(testo);
     }
 }
