@@ -2,6 +2,8 @@
 
 Porta dentro la stanza VRChat di Oculandia le cose del sito: prossimi eventi e ultime news VR.
 
+**Devi montare il tablet nel mondo? Parti da [`docs/da-dove-partire.md`](docs/da-dove-partire.md).**
+
 ## A che punto siamo
 
 | Pezzo | Stato |
@@ -35,6 +37,7 @@ tools/build_feed.py        costruisce il feed dai dati pubblici del sito
 tools/test_build_feed.py   test
 feed/tablet.json           il feed che il mondo scarica
 docs/formato-feed.md       i campi del feed
+docs/da-dove-partire.md    cosa è pronto e cosa serve da chi costruisce il mondo
 docs/unity-setup.md        come montare lo script nel mondo e provarlo
 unity/Assets/OculandiaTablet/Scripts/   script UdonSharp
 ```
