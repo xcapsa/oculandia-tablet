@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-14T19:34:51+0100",
- "aggiornato": "14 nov · 19:34",
+ "generato": "2026-11-15T03:33:14+0100",
+ "aggiornato": "15 nov · 03:33",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -47,7 +47,7 @@
    "tipo": "Film",
    "dove": "Bigscreen",
    "testo": "",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=belgio-italia-20261115",
    "link_corto": "oculandiavr.it/evento?id=belgio-italia-20261115",
    "img": 5,
