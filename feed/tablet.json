@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-15T10:51:20+0100",
- "aggiornato": "15 nov · 10:51",
+ "generato": "2026-11-15T17:58:54+0100",
+ "aggiornato": "15 nov · 17:58",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "death-siege-of-84281",
+   "titolo": "In Death: Siege of Heaven è autonomo su Quest 3 e 3S",
+   "data": "15 nov",
+   "cat": "Hardware",
+   "riga": "In Death: Siege of Heaven è disponibile come gioco autonomo per Meta Quest 3 e 3S. Chi vuole giocare alla modalità di difesa con l’arco…",
+   "testo": "In Death: Siege of Heaven è disponibile come gioco autonomo per Meta Quest 3 e 3S. Chi vuole giocare alla modalità di difesa con l’arco può acquistare il gioco separatamente da In Death: Unchained. Lo sviluppatore Superbright ha pubblicato il gioco l’11 novembre. Superbright conferma che Siege, la modalità originale, resta inclusa in In Death: Unchained per chi possiede già il gioco. La nuova app costa 11,99 $…",
+   "link": "https://oculandiavr.it/n/death-siege-of-84281",
+   "link_corto": "oculandiavr.it/n/death-siege-of-84281",
+   "img": 8,
+   "img_v": "1fbb6d39"
+  },
+  {
    "id": "beat-saber-sette-209a6",
    "titolo": "Beat Saber: sette brani gratuiti e il nuovo ambiente Prism",
    "data": "15 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/vros-3-collega-7ae1c",
    "img": 7,
    "img_v": "cdb5a91d"
-  },
-  {
-   "id": "vrchat-interfaccia-quick-82c07",
-   "titolo": "VRChat: la nuova interfaccia Quick Menu è prevista nella versione 2026.4.2",
-   "data": "7 nov",
-   "cat": "Software",
-   "riga": "VRChat sta preparando un nuovo aspetto per la pagina Here del Quick Menu e per i profili utente. Le azioni più usate e le persone presenti…",
-   "testo": "VRChat sta preparando un nuovo aspetto per la pagina Here del Quick Menu e per i profili utente. Le azioni più usate e le persone presenti nell’istanza saranno più a portata di mano. Le modifiche sono previste per la versione 2026.4.2. Chi preferisce i familiari colori verde acqua potrà selezionarli di nuovo nelle impostazioni. Secondo VRChat, il nuovo profilo rapido mostrerà dodici azioni senza scorrere, contro le…",
-   "link": "https://oculandiavr.it/n/vrchat-interfaccia-quick-82c07",
-   "link_corto": "oculandiavr.it/n/vrchat-interfaccia-quick-82c07",
-   "img": 8,
-   "img_v": "f94450f4"
   }
  ]
 }
