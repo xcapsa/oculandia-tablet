@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-15T17:58:54+0100",
- "aggiornato": "15 nov · 17:58",
+ "generato": "2026-11-15T22:40:41+0100",
+ "aggiornato": "15 nov · 22:40",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "mothergunship-forge-ps-5950a",
+   "titolo": "Mothergunship: Forge arriva su PS VR2 a 120 fps con cooperativa per due",
+   "data": "15 nov",
+   "cat": "Hardware",
+   "riga": "Mothergunship: Forge è arrivato su PlayStation VR2. Il roguelite consente di assemblare armi personalizzate. La scheda del PlayStation…",
+   "testo": "Mothergunship: Forge è arrivato su PlayStation VR2. Il roguelite consente di assemblare armi personalizzate. La scheda del PlayStation Store indica che la versione PS5 gira a 120 fotogrammi al secondo nativi, senza reproiezione. Il gioco supporta i riscontri del visore e dei grilletti adattivi. Include anche una modalità cooperativa online facoltativa per due giocatori. Per giocare online serve PlayStation Plus. Le…",
+   "link": "https://oculandiavr.it/n/mothergunship-forge-ps-5950a",
+   "link_corto": "oculandiavr.it/n/mothergunship-forge-ps-5950a",
+   "img": 7,
+   "img_v": "17884eed"
+  },
+  {
    "id": "death-siege-of-84281",
    "titolo": "In Death: Siege of Heaven è autonomo su Quest 3 e 3S",
    "data": "15 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/steamvr-2-19-168e7",
    "img": 6,
    "img_v": "9938b248"
-  },
-  {
-   "id": "vros-3-collega-7ae1c",
-   "titolo": "vrOS 3 collega Steam Frame a un PC Windows per pannelli e giochi VR",
-   "data": "8 nov",
-   "cat": "Hardware",
-   "riga": "L’app di terze parti vrOS collega Steam Frame a un PC Windows. Nel visore mostra le finestre del desktop su pannelli spostabili e…",
-   "testo": "L’app di terze parti vrOS collega Steam Frame a un PC Windows. Nel visore mostra le finestre del desktop su pannelli spostabili e trasmette giochi PC VR. La versione 3 aggiunge la connessione al PC tramite il dongle di Steam Frame o la rete Wi-Fi di casa. vrOS è un’app Steam a pagamento, venduta separatamente. Non è un aggiornamento di Valve incluso con Steam Frame. Secondo le note aggiornate dello sviluppatore…",
-   "link": "https://oculandiavr.it/n/vros-3-collega-7ae1c",
-   "link_corto": "oculandiavr.it/n/vros-3-collega-7ae1c",
-   "img": 7,
-   "img_v": "cdb5a91d"
   }
  ]
 }
