@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-15T03:33:14+0100",
- "aggiornato": "15 nov · 03:33",
+ "generato": "2026-11-15T10:51:20+0100",
+ "aggiornato": "15 nov · 10:51",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,30 @@
  ],
  "news": [
   {
+   "id": "beat-saber-sette-209a6",
+   "titolo": "Beat Saber: sette brani gratuiti e il nuovo ambiente Prism",
+   "data": "15 nov",
+   "cat": "Software",
+   "riga": "Original Soundtrack Vol. 9 è disponibile come aggiornamento gratuito per Beat Saber su Quest e Steam. Il gioco base è a pagamento. I nuovi…",
+   "testo": "Original Soundtrack Vol. 9 è disponibile come aggiornamento gratuito per Beat Saber su Quest e Steam. Il gioco base è a pagamento. I nuovi brani riportano Camellia ed EEWK nel gioco. Si aggiungono anche cinque artisti al loro debutto in Beat Saber. Arriva anche Prism, un nuovo ambiente per i brani di OST 9. Su Steam, le note della versione 1.46.0 di Beat Games segnalano correzioni ai suoni dei colpi sulle mappe…",
+   "link": "https://oculandiavr.it/n/beat-saber-sette-209a6",
+   "link_corto": "oculandiavr.it/n/beat-saber-sette-209a6",
+   "img": 9,
+   "img_v": "60760b92"
+  },
+  {
+   "id": "h3vr2-disponibile-quest-5d3b4",
+   "titolo": "H3VR2 è disponibile su Quest 3 e 3S; SteamVR attende il 2027",
+   "data": "15 nov",
+   "cat": "Hardware",
+   "riga": "Hot Dogs, Horseshoes & Hand Grenades 2 è disponibile su Meta Quest 3 e Quest 3S. Il gioco VR standalone è il seguito del sandbox di tiro…",
+   "testo": "Hot Dogs, Horseshoes & Hand Grenades 2 è disponibile su Meta Quest 3 e Quest 3S. Il gioco VR standalone è il seguito del sandbox di tiro di lunga data di RUST LTD. Il gioco è uscito il 12 novembre, come annunciato a settembre. Il Meta Horizon Store lo indica a 39,99 $ negli Stati Uniti. La versione Steam è prevista per il 2027, ma non è stata annunciata una data esatta. Le pagine dei negozi non confermano che…",
+   "link": "https://oculandiavr.it/n/h3vr2-disponibile-quest-5d3b4",
+   "link_corto": "oculandiavr.it/n/h3vr2-disponibile-quest-5d3b4",
+   "img": 10,
+   "img_v": "cdaecc8b"
+  },
+  {
    "id": "sol-protocol-accesso-6826c",
    "titolo": "Sol Protocol arriva in accesso anticipato su PC VR",
    "data": "14 nov",
@@ -285,30 +309,6 @@
    "link_corto": "oculandiavr.it/n/vrchat-interfaccia-quick-82c07",
    "img": 8,
    "img_v": "f94450f4"
-  },
-  {
-   "id": "exd-extra-dimensional-53638",
-   "titolo": "EXD - Extra Dimensional migliora i controlli Steam Frame e aggiunge DLSS e FSR2",
-   "data": "7 nov",
-   "cat": "Hardware",
-   "riga": "EXD - Extra Dimensional riceve un aggiornamento grafico che aggiunge il supporto diretto ai controller Steam Frame e nuove opzioni di…",
-   "testo": "EXD - Extra Dimensional riceve un aggiornamento grafico che aggiunge il supporto diretto ai controller Steam Frame e nuove opzioni di upscaling per i giocatori PC. Secondo lo sviluppatore Lords of Illusion, la versione 1.1.4 migliora il riconoscimento e la mappatura dei controller Steam Frame, compreso il pad direzionale del controller sinistro. EXD offre ora AMD FSR2 e due modalità Nvidia DLSS. La qualità…",
-   "link": "https://oculandiavr.it/n/exd-extra-dimensional-53638",
-   "link_corto": "oculandiavr.it/n/exd-extra-dimensional-53638",
-   "img": 9,
-   "img_v": "1c4576cd"
-  },
-  {
-   "id": "bootstrap-island-aggiung-d72ff",
-   "titolo": "Bootstrap Island aggiunge la modalità Cargo Master",
-   "data": "5 nov",
-   "cat": "Giochi",
-   "riga": "Cargo Master è una nuova modalità di Bootstrap Island. Per ottenere ricompense e scalare le classifiche globali, bisogna recuperare e…",
-   "testo": "Cargo Master è una nuova modalità di Bootstrap Island. Per ottenere ricompense e scalare le classifiche globali, bisogna recuperare e consegnare carichi sempre più difficili. L’aggiornamento è già disponibile su PC VR. La versione per PlayStation VR2 arriverà in seguito. Cargo Master include al momento 19 incarichi. Completandoli tutti si sblocca la ricompensa finale, la Golden Seashell. Completando la modalità, il…",
-   "link": "https://oculandiavr.it/n/bootstrap-island-aggiung-d72ff",
-   "link_corto": "oculandiavr.it/n/bootstrap-island-aggiung-d72ff",
-   "img": 10,
-   "img_v": "3f3a3465"
   }
  ]
 }
