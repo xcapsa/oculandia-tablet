@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-16T02:53:16+0100",
- "aggiornato": "16 nov · 02:53",
+ "generato": "2026-11-16T10:28:58+0100",
+ "aggiornato": "16 nov · 10:28",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "steam-frame-beta-b2ec4",
+   "titolo": "Steam Frame: la beta mostra l’ambiente reale nei giochi VR in streaming",
+   "data": "16 nov",
+   "cat": "Hardware",
+   "riga": "Valve sta provando un nuovo modo per mostrare la stanza reale mentre si trasmettono giochi PC VR su Steam Frame. SteamOS 0.5.9 beta…",
+   "testo": "Valve sta provando un nuovo modo per mostrare la stanza reale mentre si trasmettono giochi PC VR su Steam Frame. SteamOS 0.5.9 beta aggiunge a Room View il supporto per il chroma key: rende trasparente un colore scelto nei contenuti trasmessi e mostra la visuale delle fotocamere del visore. Per usare la funzione servono la beta di Steam Frame sul visore e quella di SteamVR sul PC. La versione stabile non la include…",
+   "link": "https://oculandiavr.it/n/steam-frame-beta-b2ec4",
+   "link_corto": "oculandiavr.it/n/steam-frame-beta-b2ec4",
+   "img": 6,
+   "img_v": "ea278d9a"
+  },
+  {
    "id": "mothergunship-forge-ps-5950a",
    "titolo": "Mothergunship: Forge arriva su PS VR2 a 120 fps con cooperativa per due",
    "data": "15 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/the-great-flood-d6d2b",
    "img": 5,
    "img_v": "ba4e8927"
-  },
-  {
-   "id": "steamvr-2-19-168e7",
-   "titolo": "SteamVR 2.19.2 corregge bug della beta nello streaming",
-   "data": "10 nov",
-   "cat": "Software",
-   "riga": "Valve ha pubblicato una beta di SteamVR che corregge problemi nei menu e negli overlay introdotti dalla versione precedente, dedicata allo…",
-   "testo": "Valve ha pubblicato una beta di SteamVR che corregge problemi nei menu e negli overlay introdotti dalla versione precedente, dedicata allo streaming. La versione 2.19.2 risolve anche arresti anomali e artefatti visivi che potevano comparire quando cambiava la risoluzione dello streaming. Le correzioni sono disponibili nella beta di SteamVR e potrebbero non essere ancora presenti nella versione stabile usata da…",
-   "link": "https://oculandiavr.it/n/steamvr-2-19-168e7",
-   "link_corto": "oculandiavr.it/n/steamvr-2-19-168e7",
-   "img": 6,
-   "img_v": "9938b248"
   }
  ]
 }
