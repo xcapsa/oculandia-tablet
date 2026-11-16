@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-15T22:40:41+0100",
- "aggiornato": "15 nov · 22:40",
+ "generato": "2026-11-16T02:53:16+0100",
+ "aggiornato": "16 nov · 02:53",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -39,21 +39,6 @@
    "img_v": "04c8488c"
   },
   {
-   "id": "belgio-italia-20261115",
-   "titolo": "Belgio–Italia · Insieme su Bigscreen",
-   "quando": "dom 15 nov · 20:45",
-   "giorno": "2026-11-15",
-   "ora": "20:45",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/evento?id=belgio-italia-20261115",
-   "link_corto": "oculandiavr.it/evento?id=belgio-italia-20261115",
-   "img": 5,
-   "img_v": "0995e9d0"
-  },
-  {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261116",
    "titolo": "Anime Night",
    "quando": "lun 16 nov · 21:00",
@@ -62,7 +47,7 @@
    "tipo": "Film",
    "dove": "Bigscreen",
    "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/events?tipo=film",
    "link_corto": "oculandiavr.it/events?tipo=film",
    "img": 6,
@@ -156,6 +141,21 @@
    "link": "https://oculandiavr.it/events?tipo=film",
    "link_corto": "oculandiavr.it/events?tipo=film",
    "img": 11,
+   "img_v": "c709ef7b"
+  },
+  {
+   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261207",
+   "titolo": "Anime Night",
+   "quando": "lun 7 dic · 21:00",
+   "giorno": "2026-12-07",
+   "ora": "21:00",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/events?tipo=film",
+   "link_corto": "oculandiavr.it/events?tipo=film",
+   "img": 5,
    "img_v": "c709ef7b"
   },
   {
