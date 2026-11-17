@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-17T03:53:08+0100",
- "aggiornato": "17 nov · 03:53",
+ "generato": "2026-11-17T12:42:36+0100",
+ "aggiornato": "17 nov · 12:42",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,42 @@
  ],
  "news": [
   {
+   "id": "vros-aggiunge-streaming-9217a",
+   "titolo": "vrOS aggiunge lo streaming di SteamVR su Quest 3, 3S e Quest 2",
+   "data": "17 nov",
+   "cat": "Hardware",
+   "riga": "L’aggiornamento di vrOS aggiunge il supporto per Quest 3, Quest 3S e Quest 2. Permette di trasmettere giochi SteamVR dal PC e di…",
+   "testo": "L’aggiornamento di vrOS aggiunge il supporto per Quest 3, Quest 3S e Quest 2. Permette di trasmettere giochi SteamVR dal PC e di affiancare pannelli con finestre del desktop. Al momento, l’installazione integrata di vrOS richiede un PC Windows e l’app per il visore non è disponibile sul Meta Horizon Store. Non si tratta di un aggiornamento di sistema Meta. Serve comunque un PC adatto a eseguire i giochi trasmessi…",
+   "link": "https://oculandiavr.it/n/vros-aggiunge-streaming-9217a",
+   "link_corto": "oculandiavr.it/n/vros-aggiunge-streaming-9217a",
+   "img": 3,
+   "img_v": "65b50663"
+  },
+  {
+   "id": "outlanders-vr-quest-337d6",
+   "titolo": "Outlanders VR arriva su Quest e Steam il 10 dicembre; demo PC gratis disponibile",
+   "data": "17 nov",
+   "cat": "Mercato",
+   "riga": "Outlanders VR porterà la serie strategica di costruzione di città su Meta Quest e PC VR il 10 dicembre; su Steam è già disponibile una…",
+   "testo": "Outlanders VR porterà la serie strategica di costruzione di città su Meta Quest e PC VR il 10 dicembre; su Steam è già disponibile una demo gratuita. La versione autonoma è indicata per Quest 2, Quest 3, Quest 3S e Quest Pro, mentre su Steam è prevista l’uscita per PC VR. Gli sviluppatori spiegano che non si impartiscono ordini direttamente ai singoli residenti: si gestiscono edifici, scorte e posti di lavoro…",
+   "link": "https://oculandiavr.it/n/outlanders-vr-quest-337d6",
+   "link_corto": "oculandiavr.it/n/outlanders-vr-quest-337d6",
+   "img": 4,
+   "img_v": "96a4ce35"
+  },
+  {
+   "id": "funfitland-porta-quest-a795e",
+   "titolo": "FunFitLand porta su Quest gli allenamenti multiplayer con accesso alle sessioni in corso",
+   "data": "17 nov",
+   "cat": "Giochi",
+   "riga": "L’app fitness FunFitLand per Quest ha introdotto una modalità multiplayer che permette agli amici di unirsi a un allenamento già iniziato…",
+   "testo": "L’app fitness FunFitLand per Quest ha introdotto una modalità multiplayer che permette agli amici di unirsi a un allenamento già iniziato. Una persona può iniziare ad allenarsi senza aspettare in una lobby, mentre un’altra può unirsi più tardi alla stessa sessione. Gli amici possono così allenarsi insieme anche se cominciano in momenti diversi. Secondo UploadVR, che ha provato la funzione e parlato con il fondatore…",
+   "link": "https://oculandiavr.it/n/funfitland-porta-quest-a795e",
+   "link_corto": "oculandiavr.it/n/funfitland-porta-quest-a795e",
+   "img": 5,
+   "img_v": "0fd42874"
+  },
+  {
    "id": "steam-frame-beta-b2ec4",
    "titolo": "Steam Frame: la beta mostra l’ambiente reale nei giochi VR in streaming",
    "data": "16 nov",
@@ -273,42 +309,6 @@
    "link_corto": "oculandiavr.it/n/blackmagic-microfono-aud-330c4",
    "img": 2,
    "img_v": "ae3fa488"
-  },
-  {
-   "id": "somnium-space-potrebbe-93ca2",
-   "titolo": "Somnium Space potrebbe tornare su Steam Early Access a dicembre 2026",
-   "data": "11 nov",
-   "cat": "Giochi",
-   "riga": "Somnium Space, piattaforma social VR riservata agli adulti, fu rimossa da Steam nel 2021, quando Valve eliminò i giochi legati alle…",
-   "testo": "Somnium Space, piattaforma social VR riservata agli adulti, fu rimossa da Steam nel 2021, quando Valve eliminò i giochi legati alle criptovalute. La pagina Steam indica che la piattaforma arriverà in Steam Early Access a dicembre 2026. Somnium Connect si terrà il 28 novembre. L’articolo ipotizza che Somnium Space si adeguerà al divieto generale di Steam sulle criptovalute e sugli NFT. Secondo la pagina Steam, per…",
-   "link": "https://oculandiavr.it/n/somnium-space-potrebbe-93ca2",
-   "link_corto": "oculandiavr.it/n/somnium-space-potrebbe-93ca2",
-   "img": 3,
-   "img_v": "772fbc80"
-  },
-  {
-   "id": "disney-aggiunge-60-805ba",
-   "titolo": "Disney+ aggiunge 60 film in 3D e ambienti immersivi su Quest 3 e 3S",
-   "data": "11 nov",
-   "cat": "Hardware",
-   "riga": "L’app Disney+ per Quest 3 e Quest 3S si aggiorna oggi con contenuti in 3D e ambienti immersivi sui visori Meta. Sono stati aggiunti 60…",
-   "testo": "L’app Disney+ per Quest 3 e Quest 3S si aggiorna oggi con contenuti in 3D e ambienti immersivi sui visori Meta. Sono stati aggiunti 60 film in 3D, tra cui Black Panther, The Avengers e Star Wars: The Force Awakens. Gli ambienti immersivi sono teatri spaziali in 3D dove si possono guardare film, come Star Wars su Tatooine. Per accedere ai contenuti serve un abbonamento Disney+ attivo. La disponibilità della…",
-   "link": "https://oculandiavr.it/n/disney-aggiunge-60-805ba",
-   "link_corto": "oculandiavr.it/n/disney-aggiunge-60-805ba",
-   "img": 4,
-   "img_v": "8b71f29d"
-  },
-  {
-   "id": "the-great-flood-d6d2b",
-   "titolo": "The Great Flood: strategia in realtà mista su Quest, uscita annunciata per il 9 novembre",
-   "data": "10 nov",
-   "cat": "Mercato",
-   "riga": "The Great Flood è un gioco strategico in realtà mista che porta eserciti in miniatura nella stanza del giocatore. Si compone una squadra…",
-   "testo": "The Great Flood è un gioco strategico in realtà mista che porta eserciti in miniatura nella stanza del giocatore. Si compone una squadra di personaggi mitologici, si schierano le truppe su un campo di battaglia in stile tavolo e si affrontano partite uno contro uno o due contro due. SoulFire Studio e LingVision Games hanno annunciato l’uscita per Meta Quest il 9 novembre e descrivono il gioco come free-to-play. Al…",
-   "link": "https://oculandiavr.it/n/the-great-flood-d6d2b",
-   "link_corto": "oculandiavr.it/n/the-great-flood-d6d2b",
-   "img": 5,
-   "img_v": "ba4e8927"
   }
  ]
 }
