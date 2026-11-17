@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-16T10:28:58+0100",
- "aggiornato": "16 nov · 10:28",
+ "generato": "2026-11-17T03:53:08+0100",
+ "aggiornato": "17 nov · 03:53",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -37,21 +37,6 @@
    "link_corto": "discord.gg/MNbn9usjm9",
    "img": 2,
    "img_v": "04c8488c"
-  },
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261116",
-   "titolo": "Anime Night",
-   "quando": "lun 16 nov · 21:00",
-   "giorno": "2026-11-16",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 6,
-   "img_v": "c709ef7b"
   },
   {
    "id": "sports-2026-f1-las-vegas-qualifying-8985c99f",
@@ -187,6 +172,21 @@
    "link_corto": "discord.gg/MNbn9usjm9",
    "img": 4,
    "img_v": "2932aff5"
+  },
+  {
+   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261214",
+   "titolo": "Anime Night",
+   "quando": "lun 14 dic · 21:00",
+   "giorno": "2026-12-14",
+   "ora": "21:00",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/events?tipo=film",
+   "link_corto": "oculandiavr.it/events?tipo=film",
+   "img": 6,
+   "img_v": "c709ef7b"
   }
  ],
  "news": [
