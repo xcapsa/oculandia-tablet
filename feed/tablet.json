@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-17T12:42:36+0100",
- "aggiornato": "17 nov · 12:42",
+ "generato": "2026-11-18T20:31:42+0100",
+ "aggiornato": "18 nov · 20:31",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "project-hail-mary-67e62",
+   "titolo": "Project Hail Mary: Journey Among the Stars arriva in realtà mista",
+   "data": "18 nov",
+   "cat": "Hardware",
+   "riga": "In Project Hail Mary: Journey Among the Stars puoi affiancare Ryland Grace e Rocky a bordo della loro astronave danneggiata, in realtà…",
+   "testo": "In Project Hail Mary: Journey Among the Stars puoi affiancare Ryland Grace e Rocky a bordo della loro astronave danneggiata, in realtà mista. Secondo il publisher, l’esperienza è uscita il 12 novembre per Quest 3 e 3S, PICO e Android XR. Più avanti è previsto un aggiornamento VR gratuito. Lo sviluppatore non ne ha annunciato la data né precisato i contenuti.",
+   "link": "https://oculandiavr.it/n/project-hail-mary-67e62",
+   "link_corto": "oculandiavr.it/n/project-hail-mary-67e62",
+   "img": 2,
+   "img_v": "a8694f61"
+  },
+  {
    "id": "vros-aggiunge-streaming-9217a",
    "titolo": "vrOS aggiunge lo streaming di SteamVR su Quest 3, 3S e Quest 2",
    "data": "17 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/sol-protocol-accesso-6826c",
    "img": 1,
    "img_v": "290d71c4"
-  },
-  {
-   "id": "blackmagic-microfono-aud-330c4",
-   "titolo": "Blackmagic presenta un microfono per l’audio immersivo su Apple Vision Pro",
-   "data": "13 nov",
-   "cat": "Hardware",
-   "riga": "Blackmagic Design ha annunciato un microfono professionale per registrare audio spaziale nei video immersivi, compatibile con Apple Vision…",
-   "testo": "Blackmagic Design ha annunciato un microfono professionale per registrare audio spaziale nei video immersivi, compatibile con Apple Vision Pro. Il Blackmagic Ambisonic Microphone integra 108 microfoni digitali MEMS per registrare l’intero campo sonoro. Un processore interno converte i 108 segnali in 64 canali audio a 32 bit in tempo reale, usando la geometria dell’array e filtri di codifica concessi in licenza da…",
-   "link": "https://oculandiavr.it/n/blackmagic-microfono-aud-330c4",
-   "link_corto": "oculandiavr.it/n/blackmagic-microfono-aud-330c4",
-   "img": 2,
-   "img_v": "ae3fa488"
   }
  ]
 }
