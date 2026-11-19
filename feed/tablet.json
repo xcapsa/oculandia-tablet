@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-18T20:31:42+0100",
- "aggiornato": "18 nov · 20:31",
+ "generato": "2026-11-19T10:26:49+0100",
+ "aggiornato": "19 nov · 10:26",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,30 @@
  ],
  "news": [
   {
+   "id": "apexinno-f3-fascia-4830a",
+   "titolo": "Apexinno F3: fascia morbida per Quest 3 e 3S, comoda anche da sdraiati",
+   "data": "19 nov",
+   "cat": "Hardware",
+   "riga": "La fascia Apexinno F3, in tessuto intrecciato, è compatibile con Quest 3 e Quest 3S. Durante la prova, l’autore l’ha trovata molto comoda…",
+   "testo": "La fascia Apexinno F3, in tessuto intrecciato, è compatibile con Quest 3 e Quest 3S. Durante la prova, l’autore l’ha trovata molto comoda anche da sdraiato. L’autore racconta di averla indossata per ore senza fastidi. Sul retro è imbottita e la fascia superiore è morbida. Apexinno indica che la F3 è disponibile online a 35,99 dollari.",
+   "link": "https://oculandiavr.it/n/apexinno-f3-fascia-4830a",
+   "link_corto": "oculandiavr.it/n/apexinno-f3-fascia-4830a",
+   "img": 1,
+   "img_v": "73ef92f1"
+  },
+  {
+   "id": "portal-2-vr-b45e4",
+   "titolo": "Portal 2 VR Enriched 1.0.2 aggiunge la mira agli oggetti e un menu sospeso",
+   "data": "19 nov",
+   "cat": "Hardware",
+   "riga": "Il creatore afferma che la versione 1.0.2 di Portal 2 VR Enriched permette di interagire con gli oggetti lungo la linea di mira della…",
+   "testo": "Il creatore afferma che la versione 1.0.2 di Portal 2 VR Enriched permette di interagire con gli oggetti lungo la linea di mira della portal gun e mostra un menu sospeso sopra il livello durante la pausa. Secondo le note di rilascio, si possono raccogliere, lasciare o usare gli oggetti in base a dove punta la pistola, anziché alla direzione dello sguardo. La mod richiede Portal 2 su Steam, un PC Windows e un visore…",
+   "link": "https://oculandiavr.it/n/portal-2-vr-b45e4",
+   "link_corto": "oculandiavr.it/n/portal-2-vr-b45e4",
+   "img": 10,
+   "img_v": "68e0c884"
+  },
+  {
    "id": "project-hail-mary-67e62",
    "titolo": "Project Hail Mary: Journey Among the Stars arriva in realtà mista",
    "data": "18 nov",
@@ -285,30 +309,6 @@
    "link_corto": "oculandiavr.it/n/beat-saber-sette-209a6",
    "img": 9,
    "img_v": "60760b92"
-  },
-  {
-   "id": "h3vr2-disponibile-quest-5d3b4",
-   "titolo": "H3VR2 è disponibile su Quest 3 e 3S; SteamVR attende il 2027",
-   "data": "15 nov",
-   "cat": "Hardware",
-   "riga": "Hot Dogs, Horseshoes & Hand Grenades 2 è disponibile su Meta Quest 3 e Quest 3S. Il gioco VR standalone è il seguito del sandbox di tiro…",
-   "testo": "Hot Dogs, Horseshoes & Hand Grenades 2 è disponibile su Meta Quest 3 e Quest 3S. Il gioco VR standalone è il seguito del sandbox di tiro di lunga data di RUST LTD. Il gioco è uscito il 12 novembre, come annunciato a settembre. Il Meta Horizon Store lo indica a 39,99 $ negli Stati Uniti. La versione Steam è prevista per il 2027, ma non è stata annunciata una data esatta. Le pagine dei negozi non confermano che…",
-   "link": "https://oculandiavr.it/n/h3vr2-disponibile-quest-5d3b4",
-   "link_corto": "oculandiavr.it/n/h3vr2-disponibile-quest-5d3b4",
-   "img": 10,
-   "img_v": "cdaecc8b"
-  },
-  {
-   "id": "sol-protocol-accesso-6826c",
-   "titolo": "Sol Protocol arriva in accesso anticipato su PC VR",
-   "data": "14 nov",
-   "cat": "Hardware",
-   "riga": "Il roguelike cooperativo spaziale Sol Protocol, generato proceduralmente, è arrivato in accesso anticipato su PC VR dopo l’uscita su Quest…",
-   "testo": "Il roguelike cooperativo spaziale Sol Protocol, generato proceduralmente, è arrivato in accesso anticipato su PC VR dopo l’uscita su Quest 3 a settembre. Tu e due compagni di equipaggio ricoprite tre ruoli distinti a bordo della nave: combattete nello spazio, esplorate sistemi interstellari e recuperate risorse da depositi planetari e relitti per riparare o potenziare la nave. Il gioco rende al meglio con un…",
-   "link": "https://oculandiavr.it/n/sol-protocol-accesso-6826c",
-   "link_corto": "oculandiavr.it/n/sol-protocol-accesso-6826c",
-   "img": 1,
-   "img_v": "290d71c4"
   }
  ]
 }
