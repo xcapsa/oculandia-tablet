@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-20T18:12:36+0100",
- "aggiornato": "20 nov · 18:12",
+ "generato": "2026-11-21T00:19:25+0100",
+ "aggiornato": "21 nov · 00:19",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -47,11 +47,26 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "Qualifiche di Formula 1, Las Vegas Strip Circuit. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-f1-las-vegas-qualifying-8985c99f",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-f1-las-vegas-qualifying-8985c99f",
    "img": 7,
    "img_v": "2c6fd03a"
+  },
+  {
+   "id": "lazio-lecce-bigscreen-20261121",
+   "titolo": "Lazio–Lecce · Insieme su Bigscreen",
+   "quando": "sab 21 nov · 15:00",
+   "giorno": "2026-11-21",
+   "ora": "15:00",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "",
+   "in_corso": true,
+   "link": "https://oculandiavr.it/evento?id=lazio-lecce-bigscreen-20261121",
+   "link_corto": "oculandiavr.it/evento?id=lazio-lecce-bigscreen-20261121",
+   "img": 6,
+   "img_v": "8d644d26"
   },
   {
    "id": "sports-2026-serie-a-parma-roma-ad571962",
@@ -62,7 +77,7 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "Serie A. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-serie-a-parma-roma-ad571962",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-serie-a-parma-roma-ad571962",
    "img": 8,
@@ -77,7 +92,7 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "Serie A. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-serie-a-napoli-torino-f590e9fb",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-serie-a-napoli-torino-f590e9fb",
    "img": 9,
@@ -172,24 +187,21 @@
    "link_corto": "discord.gg/MNbn9usjm9",
    "img": 4,
    "img_v": "2932aff5"
-  },
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261214",
-   "titolo": "Anime Night",
-   "quando": "lun 14 dic · 21:00",
-   "giorno": "2026-12-14",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": false,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 6,
-   "img_v": "c709ef7b"
   }
  ],
  "news": [
+  {
+   "id": "quest-3-3s-30468",
+   "titolo": "Quest 3 e 3S: oltre 150 film 3D a noleggio o acquisto negli USA",
+   "data": "20 nov",
+   "cat": "Hardware",
+   "riga": "Negli Stati Uniti, chi possiede Quest 3 o Quest 3S può noleggiare o acquistare da Meta oltre 150 film in 3D, tra cui il film-concerto di…",
+   "testo": "Negli Stati Uniti, chi possiede Quest 3 o Quest 3S può noleggiare o acquistare da Meta oltre 150 film in 3D, tra cui il film-concerto di Billie Eilish *Hit Me Hard and Soft: The Tour*. Nella libreria dell'app TV ci sono anche *Avatar*, *Spider-Man: Far From Home*, *Jurassic World Rebirth* e *Wicked: For Good*. Il film-concerto, co-diretto da Billie Eilish e James Cameron, è disponibile solo a noleggio o acquisto in…",
+   "link": "https://oculandiavr.it/n/quest-3-3s-30468",
+   "link_corto": "oculandiavr.it/n/quest-3-3s-30468",
+   "img": 7,
+   "img_v": "076a5287"
+  },
   {
    "id": "meta-quest-3s-bfe90",
    "titolo": "Meta Quest 3S: sconto del 15% per il Black Friday",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/steam-frame-beta-b2ec4",
    "img": 6,
    "img_v": "ea278d9a"
-  },
-  {
-   "id": "mothergunship-forge-ps-5950a",
-   "titolo": "Mothergunship: Forge arriva su PS VR2 a 120 fps con cooperativa per due",
-   "data": "15 nov",
-   "cat": "Hardware",
-   "riga": "Mothergunship: Forge è arrivato su PlayStation VR2. Il roguelite consente di assemblare armi personalizzate. La scheda del PlayStation…",
-   "testo": "Mothergunship: Forge è arrivato su PlayStation VR2. Il roguelite consente di assemblare armi personalizzate. La scheda del PlayStation Store indica che la versione PS5 gira a 120 fotogrammi al secondo nativi, senza reproiezione. Il gioco supporta i riscontri del visore e dei grilletti adattivi. Include anche una modalità cooperativa online facoltativa per due giocatori. Per giocare online serve PlayStation Plus. Le…",
-   "link": "https://oculandiavr.it/n/mothergunship-forge-ps-5950a",
-   "link_corto": "oculandiavr.it/n/mothergunship-forge-ps-5950a",
-   "img": 7,
-   "img_v": "17884eed"
   }
  ]
 }
