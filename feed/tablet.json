@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-19T10:26:49+0100",
- "aggiornato": "19 nov · 10:26",
+ "generato": "2026-11-20T01:54:30+0100",
+ "aggiornato": "20 nov · 01:54",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "smash-drums-tiny-73bf8",
+   "titolo": "Smash Drums: Tiny Drums arriva il 2 dicembre su Quest 3 e 3S",
+   "data": "19 nov",
+   "cat": "Hardware",
+   "riga": "Tiny Drums è una nuova modalità gratuita di Smash Drums, in arrivo a dicembre. Il gioco aggiungerà anche il supporto al tracciamento delle…",
+   "testo": "Tiny Drums è una nuova modalità gratuita di Smash Drums, in arrivo a dicembre. Il gioco aggiungerà anche il supporto al tracciamento delle mani su Quest 3, Quest 3S e Meta VR Glasses. Con l’aggiornamento gratuito Tiny Drums, si potrà suonare con la punta delle dita su batterie in miniatura in un’esperienza di realtà mista. L’aggiornamento arriverà su Meta Quest 3 e 3S il 2 dicembre. Sarà disponibile anche sui…",
+   "link": "https://oculandiavr.it/n/smash-drums-tiny-73bf8",
+   "link_corto": "oculandiavr.it/n/smash-drums-tiny-73bf8",
+   "img": 9,
+   "img_v": "31ef7d4c"
+  },
+  {
    "id": "apexinno-f3-fascia-4830a",
    "titolo": "Apexinno F3: fascia morbida per Quest 3 e 3S, comoda anche da sdraiati",
    "data": "19 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/death-siege-of-84281",
    "img": 8,
    "img_v": "1fbb6d39"
-  },
-  {
-   "id": "beat-saber-sette-209a6",
-   "titolo": "Beat Saber: sette brani gratuiti e il nuovo ambiente Prism",
-   "data": "15 nov",
-   "cat": "Software",
-   "riga": "Original Soundtrack Vol. 9 è disponibile come aggiornamento gratuito per Beat Saber su Quest e Steam. Il gioco base è a pagamento. I nuovi…",
-   "testo": "Original Soundtrack Vol. 9 è disponibile come aggiornamento gratuito per Beat Saber su Quest e Steam. Il gioco base è a pagamento. I nuovi brani riportano Camellia ed EEWK nel gioco. Si aggiungono anche cinque artisti al loro debutto in Beat Saber. Arriva anche Prism, un nuovo ambiente per i brani di OST 9. Su Steam, le note della versione 1.46.0 di Beat Games segnalano correzioni ai suoni dei colpi sulle mappe…",
-   "link": "https://oculandiavr.it/n/beat-saber-sette-209a6",
-   "link_corto": "oculandiavr.it/n/beat-saber-sette-209a6",
-   "img": 9,
-   "img_v": "60760b92"
   }
  ]
 }
