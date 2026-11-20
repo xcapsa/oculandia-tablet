@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-20T01:54:30+0100",
- "aggiornato": "20 nov · 01:54",
+ "generato": "2026-11-20T18:12:36+0100",
+ "aggiornato": "20 nov · 18:12",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "meta-quest-3s-bfe90",
+   "titolo": "Meta Quest 3S: sconto del 15% per il Black Friday",
+   "data": "20 nov",
+   "cat": "Hardware",
+   "riga": "Per il Black Friday, Meta ha annunciato uno sconto del 15% su Quest 3S. Fino al 30 novembre, il modello da 128 GB costa 296,99 $, invece…",
+   "testo": "Per il Black Friday, Meta ha annunciato uno sconto del 15% su Quest 3S. Fino al 30 novembre, il modello da 128 GB costa 296,99 $, invece di 349,99 $. Quello da 256 GB costa 381,99 $, con uno sconto di 68 $. Quest 3S è il visore VR più economico di Meta. Ha lo stesso chipset di Quest 3 e può eseguire tutti i suoi giochi.",
+   "link": "https://oculandiavr.it/n/meta-quest-3s-bfe90",
+   "link_corto": "oculandiavr.it/n/meta-quest-3s-bfe90",
+   "img": 8,
+   "img_v": "5de67de5"
+  },
+  {
    "id": "smash-drums-tiny-73bf8",
    "titolo": "Smash Drums: Tiny Drums arriva il 2 dicembre su Quest 3 e 3S",
    "data": "19 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/mothergunship-forge-ps-5950a",
    "img": 7,
    "img_v": "17884eed"
-  },
-  {
-   "id": "death-siege-of-84281",
-   "titolo": "In Death: Siege of Heaven è autonomo su Quest 3 e 3S",
-   "data": "15 nov",
-   "cat": "Hardware",
-   "riga": "In Death: Siege of Heaven è disponibile come gioco autonomo per Meta Quest 3 e 3S. Chi vuole giocare alla modalità di difesa con l’arco…",
-   "testo": "In Death: Siege of Heaven è disponibile come gioco autonomo per Meta Quest 3 e 3S. Chi vuole giocare alla modalità di difesa con l’arco può acquistare il gioco separatamente da In Death: Unchained. Lo sviluppatore Superbright ha pubblicato il gioco l’11 novembre. Superbright conferma che Siege, la modalità originale, resta inclusa in In Death: Unchained per chi possiede già il gioco. La nuova app costa 11,99 $…",
-   "link": "https://oculandiavr.it/n/death-siege-of-84281",
-   "link_corto": "oculandiavr.it/n/death-siege-of-84281",
-   "img": 8,
-   "img_v": "1fbb6d39"
   }
  ]
 }
