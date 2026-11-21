@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-21T13:57:19+0100",
- "aggiornato": "21 nov · 13:57",
+ "generato": "2026-11-21T21:02:04+0100",
+ "aggiornato": "21 nov · 21:02",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "cyberpunk-2077-vr-1e858",
+   "titolo": "Cyberpunk 2077 VR: mani fisiche e sterzata in moto con i controller",
+   "data": "21 nov",
+   "cat": "Software",
+   "riga": "L’ultimo aggiornamento della mod VR non ufficiale di Cyberpunk 2077 aggiunge mani basate sulla fisica e permette di sterzare in moto…",
+   "testo": "L’ultimo aggiornamento della mod VR non ufficiale di Cyberpunk 2077 aggiunge mani basate sulla fisica e permette di sterzare in moto usando i controller tracciati e i movimenti del corpo. La versione 0.2.45 corregge un HUD lampeggiante sui runtime diversi da SteamVR. La mod resta un progetto non ufficiale per PC, non una modalità VR nativa annunciata da CD Projekt Red. I requisiti indicati dal progetto includono la…",
+   "link": "https://oculandiavr.it/n/cyberpunk-2077-vr-1e858",
+   "link_corto": "oculandiavr.it/n/cyberpunk-2077-vr-1e858",
+   "img": 4,
+   "img_v": "b9d14293"
+  },
+  {
    "id": "steam-frame-beta-c9295",
    "titolo": "Steam Frame: la beta regola la vibrazione per gioco e migliora lo streaming",
    "data": "21 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/vros-aggiunge-streaming-9217a",
    "img": 3,
    "img_v": "65b50663"
-  },
-  {
-   "id": "outlanders-vr-quest-337d6",
-   "titolo": "Outlanders VR arriva su Quest e Steam il 10 dicembre; demo PC gratis disponibile",
-   "data": "17 nov",
-   "cat": "Mercato",
-   "riga": "Outlanders VR porterà la serie strategica di costruzione di città su Meta Quest e PC VR il 10 dicembre; su Steam è già disponibile una…",
-   "testo": "Outlanders VR porterà la serie strategica di costruzione di città su Meta Quest e PC VR il 10 dicembre; su Steam è già disponibile una demo gratuita. La versione autonoma è indicata per Quest 2, Quest 3, Quest 3S e Quest Pro, mentre su Steam è prevista l’uscita per PC VR. Gli sviluppatori spiegano che non si impartiscono ordini direttamente ai singoli residenti: si gestiscono edifici, scorte e posti di lavoro…",
-   "link": "https://oculandiavr.it/n/outlanders-vr-quest-337d6",
-   "link_corto": "oculandiavr.it/n/outlanders-vr-quest-337d6",
-   "img": 4,
-   "img_v": "96a4ce35"
   }
  ]
 }
