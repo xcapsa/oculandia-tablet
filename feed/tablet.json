@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-21T00:19:25+0100",
- "aggiornato": "21 nov · 00:19",
+ "generato": "2026-11-21T13:57:19+0100",
+ "aggiornato": "21 nov · 13:57",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,30 @@
  ],
  "news": [
   {
+   "id": "steam-frame-beta-c9295",
+   "titolo": "Steam Frame: la beta regola la vibrazione per gioco e migliora lo streaming",
+   "data": "21 nov",
+   "cat": "Hardware",
+   "riga": "L’ultima beta del software di sistema di Steam Frame permette di regolare la vibrazione dei controller per ciascun gioco. L’aggiornamento…",
+   "testo": "L’ultima beta del software di sistema di Steam Frame permette di regolare la vibrazione dei controller per ciascun gioco. L’aggiornamento aggiunge anche un controllo globale per la nitidezza dello schermo e modifiche per migliorare la trasmissione video da un PC. Le nuove impostazioni e correzioni sono ancora in fase di test e non sono state distribuite a tutti tramite il canale stabile. Valve segnala anche meno…",
+   "link": "https://oculandiavr.it/n/steam-frame-beta-c9295",
+   "link_corto": "oculandiavr.it/n/steam-frame-beta-c9295",
+   "img": 5,
+   "img_v": "ea278d9a"
+  },
+  {
+   "id": "beta-steamvr-2-d02f5",
+   "titolo": "La beta di SteamVR 2.19.4 migliora lo streaming PC VR e la scelta della GPU in Steam Link",
+   "data": "21 nov",
+   "cat": "Hardware",
+   "riga": "L’ultima beta di SteamVR punta a rendere più affidabile lo streaming video in PC VR con schede grafiche Nvidia e AMD. Valve afferma che…",
+   "testo": "L’ultima beta di SteamVR punta a rendere più affidabile lo streaming video in PC VR con schede grafiche Nvidia e AMD. Valve afferma che, sui portatili con due GPU, Steam Link sceglierà quella più potente, salvo che nelle impostazioni grafiche di Windows sia stata indicata una preferenza per SteamVR. Le modifiche sono incluse nella beta di SteamVR 2.19.4. Steam Link per Meta Quest aggiunge il supporto al chroma key…",
+   "link": "https://oculandiavr.it/n/beta-steamvr-2-d02f5",
+   "link_corto": "oculandiavr.it/n/beta-steamvr-2-d02f5",
+   "img": 6,
+   "img_v": "ea3e528c"
+  },
+  {
    "id": "quest-3-3s-30468",
    "titolo": "Quest 3 e 3S: oltre 150 film 3D a noleggio o acquisto negli USA",
    "data": "20 nov",
@@ -285,30 +309,6 @@
    "link_corto": "oculandiavr.it/n/outlanders-vr-quest-337d6",
    "img": 4,
    "img_v": "96a4ce35"
-  },
-  {
-   "id": "funfitland-porta-quest-a795e",
-   "titolo": "FunFitLand porta su Quest gli allenamenti multiplayer con accesso alle sessioni in corso",
-   "data": "17 nov",
-   "cat": "Giochi",
-   "riga": "L’app fitness FunFitLand per Quest ha introdotto una modalità multiplayer che permette agli amici di unirsi a un allenamento già iniziato…",
-   "testo": "L’app fitness FunFitLand per Quest ha introdotto una modalità multiplayer che permette agli amici di unirsi a un allenamento già iniziato. Una persona può iniziare ad allenarsi senza aspettare in una lobby, mentre un’altra può unirsi più tardi alla stessa sessione. Gli amici possono così allenarsi insieme anche se cominciano in momenti diversi. Secondo UploadVR, che ha provato la funzione e parlato con il fondatore…",
-   "link": "https://oculandiavr.it/n/funfitland-porta-quest-a795e",
-   "link_corto": "oculandiavr.it/n/funfitland-porta-quest-a795e",
-   "img": 5,
-   "img_v": "0fd42874"
-  },
-  {
-   "id": "steam-frame-beta-b2ec4",
-   "titolo": "Steam Frame: la beta mostra l’ambiente reale nei giochi VR in streaming",
-   "data": "16 nov",
-   "cat": "Hardware",
-   "riga": "Valve sta provando un nuovo modo per mostrare la stanza reale mentre si trasmettono giochi PC VR su Steam Frame. SteamOS 0.5.9 beta…",
-   "testo": "Valve sta provando un nuovo modo per mostrare la stanza reale mentre si trasmettono giochi PC VR su Steam Frame. SteamOS 0.5.9 beta aggiunge a Room View il supporto per il chroma key: rende trasparente un colore scelto nei contenuti trasmessi e mostra la visuale delle fotocamere del visore. Per usare la funzione servono la beta di Steam Frame sul visore e quella di SteamVR sul PC. La versione stabile non la include…",
-   "link": "https://oculandiavr.it/n/steam-frame-beta-b2ec4",
-   "link_corto": "oculandiavr.it/n/steam-frame-beta-b2ec4",
-   "img": 6,
-   "img_v": "ea278d9a"
   }
  ]
 }
