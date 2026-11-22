@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-22T01:16:46+0100",
- "aggiornato": "22 nov · 01:16",
+ "generato": "2026-11-22T16:37:25+0100",
+ "aggiornato": "22 nov · 16:37",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -71,9 +71,9 @@
   {
    "id": "sports-2026-serie-a-milan-frosinone-9ed94c10",
    "titolo": "Milan – Frosinone",
-   "quando": "dom 22 nov · 15:00",
+   "quando": "dom 22 nov · 18:00",
    "giorno": "2026-11-22",
-   "ora": "15:00",
+   "ora": "18:00",
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "Serie A. Calendario Oculandia su Bigscreen.",
@@ -81,7 +81,7 @@
    "link": "https://oculandiavr.it/evento?id=sports-2026-serie-a-milan-frosinone-9ed94c10",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-serie-a-milan-frosinone-9ed94c10",
    "img": 7,
-   "img_v": "6074b0f2"
+   "img_v": "7a15f8bb"
   },
   {
    "id": "sports-2026-serie-a-atalanta-inter-ba1e3fb8",
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "fighting-moore-tornato-bfcd9",
+   "titolo": "Fighting Moore è tornato gratis su Steam: su Quest serve un PC VR",
+   "data": "22 nov",
+   "cat": "Hardware",
+   "riga": "Fighting Moore è tornato su Steam completamente rimasterizzato e gratuito: è un gioco d’azione VR per giocatore singolo, con controlli di…",
+   "testo": "Fighting Moore è tornato su Steam completamente rimasterizzato e gratuito: è un gioco d’azione VR per giocatore singolo, con controlli di movimento. Si può giocare con i visori Meta Quest tramite Link, Air Link o Virtual Desktop, ma serve comunque un computer pronto per la realtà virtuale. Non è un download standalone per Quest. La scheda indica cinque capitoli e undici tipi di nemici. Sono disponibili le…",
+   "link": "https://oculandiavr.it/n/fighting-moore-tornato-bfcd9",
+   "link_corto": "oculandiavr.it/n/fighting-moore-tornato-bfcd9",
+   "img": 2,
+   "img_v": "3bdd86bc"
+  },
+  {
    "id": "mod-vr-metal-1af8a",
    "titolo": "La mod VR di Metal Gear Solid 4 introduce ricariche manuali nella versione 0.3.0",
    "data": "21 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/portal-2-vr-b45e4",
    "img": 10,
    "img_v": "68e0c884"
-  },
-  {
-   "id": "project-hail-mary-67e62",
-   "titolo": "Project Hail Mary: Journey Among the Stars arriva in realtà mista",
-   "data": "18 nov",
-   "cat": "Hardware",
-   "riga": "In Project Hail Mary: Journey Among the Stars puoi affiancare Ryland Grace e Rocky a bordo della loro astronave danneggiata, in realtà…",
-   "testo": "In Project Hail Mary: Journey Among the Stars puoi affiancare Ryland Grace e Rocky a bordo della loro astronave danneggiata, in realtà mista. Secondo il publisher, l’esperienza è uscita il 12 novembre per Quest 3 e 3S, PICO e Android XR. Più avanti è previsto un aggiornamento VR gratuito. Lo sviluppatore non ne ha annunciato la data né precisato i contenuti.",
-   "link": "https://oculandiavr.it/n/project-hail-mary-67e62",
-   "link_corto": "oculandiavr.it/n/project-hail-mary-67e62",
-   "img": 2,
-   "img_v": "a8694f61"
   }
  ]
 }
