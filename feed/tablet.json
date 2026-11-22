@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-22T16:37:25+0100",
- "aggiornato": "22 nov · 16:37",
+ "generato": "2026-11-22T22:41:45+0100",
+ "aggiornato": "22 nov · 22:41",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -114,6 +114,21 @@
    "img_v": "c709ef7b"
   },
   {
+   "id": "aspettando-doomsday-infinity-war-20261127",
+   "titolo": "Avengers: Infinity War",
+   "quando": "ven 27 nov · 20:30",
+   "giorno": "2026-11-27",
+   "ora": "20:30",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=aspettando-doomsday-infinity-war-20261127",
+   "link_corto": "oculandiavr.it/evento?id=aspettando-doomsday-infinity-war-20261127",
+   "img": 9,
+   "img_v": "964f4309"
+  },
+  {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261130",
    "titolo": "Anime Night",
    "quando": "lun 30 nov · 21:00",
@@ -172,24 +187,33 @@
    "link_corto": "discord.gg/MNbn9usjm9",
    "img": 4,
    "img_v": "2932aff5"
-  },
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261214",
-   "titolo": "Anime Night",
-   "quando": "lun 14 dic · 21:00",
-   "giorno": "2026-12-14",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": false,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 9,
-   "img_v": "c709ef7b"
   }
  ],
  "news": [
+  {
+   "id": "dneg-collabora-meta-20063",
+   "titolo": "DNEG collabora con Meta a film 3D per i Meta VR Glasses",
+   "data": "22 nov",
+   "cat": "Hardware",
+   "riga": "DNEG, società di effetti visivi che ha curato conversioni 3D, tra cui quella di Gravity, collabora con Meta a un catalogo di film per i…",
+   "testo": "DNEG, società di effetti visivi che ha curato conversioni 3D, tra cui quella di Gravity, collabora con Meta a un catalogo di film per i Meta VR Glasses. Tra i progetti citati c’è The Hunger Games: Sunrise on the Reaping. DNEG afferma che il suo team Stereo sta lavorando a diversi titoli per il lancio degli occhiali, previsto per la primavera 2027. DNEG non ha ancora rivelato gli altri titoli del catalogo, quindi…",
+   "link": "https://oculandiavr.it/n/dneg-collabora-meta-20063",
+   "link_corto": "oculandiavr.it/n/dneg-collabora-meta-20063",
+   "img": 1,
+   "img_v": "3410b0ef"
+  },
+  {
+   "id": "meta-testa-alcuni-fd2b9",
+   "titolo": "Meta testa su alcuni Quest un Navigator semplificato",
+   "data": "22 nov",
+   "cat": "Hardware",
+   "riga": "Meta sta provando un Navigator semplificato con un gruppo ristretto di utenti. Alcuni menu dei visori Quest potrebbero quindi avere un…",
+   "testo": "Meta sta provando un Navigator semplificato con un gruppo ristretto di utenti. Alcuni menu dei visori Quest potrebbero quindi avere un aspetto diverso. Nei controlli rapidi, un pulsante VR consente di passare dall’ambiente virtuale alla visione di quello reale attraverso le fotocamere. Nel test, People si trova nell’app Chats, l’avatar è nella sezione Profilo delle Impostazioni e Meta Horizon+ diventa un’app…",
+   "link": "https://oculandiavr.it/n/meta-testa-alcuni-fd2b9",
+   "link_corto": "oculandiavr.it/n/meta-testa-alcuni-fd2b9",
+   "img": 10,
+   "img_v": "04596f1b"
+  },
   {
    "id": "fighting-moore-tornato-bfcd9",
    "titolo": "Fighting Moore è tornato gratis su Steam: su Quest serve un PC VR",
@@ -285,30 +309,6 @@
    "link_corto": "oculandiavr.it/n/smash-drums-tiny-73bf8",
    "img": 9,
    "img_v": "31ef7d4c"
-  },
-  {
-   "id": "apexinno-f3-fascia-4830a",
-   "titolo": "Apexinno F3: fascia morbida per Quest 3 e 3S, comoda anche da sdraiati",
-   "data": "19 nov",
-   "cat": "Hardware",
-   "riga": "La fascia Apexinno F3, in tessuto intrecciato, è compatibile con Quest 3 e Quest 3S. Durante la prova, l’autore l’ha trovata molto comoda…",
-   "testo": "La fascia Apexinno F3, in tessuto intrecciato, è compatibile con Quest 3 e Quest 3S. Durante la prova, l’autore l’ha trovata molto comoda anche da sdraiato. L’autore racconta di averla indossata per ore senza fastidi. Sul retro è imbottita e la fascia superiore è morbida. Apexinno indica che la F3 è disponibile online a 35,99 dollari.",
-   "link": "https://oculandiavr.it/n/apexinno-f3-fascia-4830a",
-   "link_corto": "oculandiavr.it/n/apexinno-f3-fascia-4830a",
-   "img": 1,
-   "img_v": "73ef92f1"
-  },
-  {
-   "id": "portal-2-vr-b45e4",
-   "titolo": "Portal 2 VR Enriched 1.0.2 aggiunge la mira agli oggetti e un menu sospeso",
-   "data": "19 nov",
-   "cat": "Hardware",
-   "riga": "Il creatore afferma che la versione 1.0.2 di Portal 2 VR Enriched permette di interagire con gli oggetti lungo la linea di mira della…",
-   "testo": "Il creatore afferma che la versione 1.0.2 di Portal 2 VR Enriched permette di interagire con gli oggetti lungo la linea di mira della portal gun e mostra un menu sospeso sopra il livello durante la pausa. Secondo le note di rilascio, si possono raccogliere, lasciare o usare gli oggetti in base a dove punta la pistola, anziché alla direzione dello sguardo. La mod richiede Portal 2 su Steam, un PC Windows e un visore…",
-   "link": "https://oculandiavr.it/n/portal-2-vr-b45e4",
-   "link_corto": "oculandiavr.it/n/portal-2-vr-b45e4",
-   "img": 10,
-   "img_v": "68e0c884"
   }
  ]
 }
