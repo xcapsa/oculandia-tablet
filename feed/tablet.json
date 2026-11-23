@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-23T03:33:08+0100",
- "aggiornato": "23 nov · 03:33",
+ "generato": "2026-11-23T23:53:26+0100",
+ "aggiornato": "23 nov · 23:53",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,42 @@
  ],
  "news": [
   {
+   "id": "black-white-vr-a3156",
+   "titolo": "Black & White VR Mod aggiunge un libro degli incantesimi in alpha",
+   "data": "23 nov",
+   "cat": "Software",
+   "riga": "La mod gratuita Black & White VR Mod aggiunge un libro degli incantesimi sopra la mano virtuale nel gioco di Lionhead del 2001…",
+   "testo": "La mod gratuita Black & White VR Mod aggiunge un libro degli incantesimi sopra la mano virtuale nel gioco di Lionhead del 2001. L’aggiornamento del 21 novembre introduce una modalità di volo e cambia il modo di lanciare gli oggetti. La versione 1.3.0 è la terza alpha pubblica del progetto, ancora in lavorazione. Lo sviluppatore dice di aver testato la versione 1.3 con Meta Quest 3 tramite Virtual Desktop. Altri…",
+   "link": "https://oculandiavr.it/n/black-white-vr-a3156",
+   "link_corto": "oculandiavr.it/n/black-white-vr-a3156",
+   "img": 7,
+   "img_v": "5e8c2ea6"
+  },
+  {
+   "id": "heavy-rain-mod-a2012",
+   "titolo": "Heavy Rain: mod VR non ufficiale in prima persona, ancora in test",
+   "data": "23 nov",
+   "cat": "Hardware",
+   "riga": "Heavy Rain ha una mod VR gratuita e non ufficiale per PC, con visuale opzionale in prima persona e mani controllate dal movimento. Non è…",
+   "testo": "Heavy Rain ha una mod VR gratuita e non ufficiale per PC, con visuale opzionale in prima persona e mani controllate dal movimento. Non è una versione autonoma per Quest. Il progetto è ancora in fase di test e il creatore avverte che alcune funzioni richiedono altro lavoro. Il modder adore11s ha pubblicato la prima versione per i test il 20 novembre e la versione 1.2 il 22 novembre. Secondo le istruzioni del…",
+   "link": "https://oculandiavr.it/n/heavy-rain-mod-a2012",
+   "link_corto": "oculandiavr.it/n/heavy-rain-mod-a2012",
+   "img": 8,
+   "img_v": "3a76bc70"
+  },
+  {
+   "id": "saber-fight-vr-ccfa1",
+   "titolo": "Saber Fight VR diventerà gratuito su Steam, senza una data confermata",
+   "data": "23 nov",
+   "cat": "Mercato",
+   "riga": "Lo sviluppatore afferma che Saber Fight VR diventerà gratuito su Steam. Quando avverrà il passaggio, i giocatori potranno provarlo senza…",
+   "testo": "Lo sviluppatore afferma che Saber Fight VR diventerà gratuito su Steam. Quando avverrà il passaggio, i giocatori potranno provarlo senza pagare. Per ora, il gioco di combattimenti con spade laser è ancora a pagamento e non c’è una data confermata per il cambiamento. Chi possiede già il gioco manterrà l’accesso. Secondo lo studio, la versione gratuita non includerà acquisti in-game né altre forme di monetizzazione…",
+   "link": "https://oculandiavr.it/n/saber-fight-vr-ccfa1",
+   "link_corto": "oculandiavr.it/n/saber-fight-vr-ccfa1",
+   "img": 9,
+   "img_v": "fb1cfb04"
+  },
+  {
    "id": "dneg-collabora-meta-20063",
    "titolo": "DNEG collabora con Meta a film 3D per i Meta VR Glasses",
    "data": "22 nov",
@@ -273,42 +309,6 @@
    "link_corto": "oculandiavr.it/n/beta-steamvr-2-d02f5",
    "img": 6,
    "img_v": "ea3e528c"
-  },
-  {
-   "id": "quest-3-3s-30468",
-   "titolo": "Quest 3 e 3S: oltre 150 film 3D a noleggio o acquisto negli USA",
-   "data": "20 nov",
-   "cat": "Hardware",
-   "riga": "Negli Stati Uniti, chi possiede Quest 3 o Quest 3S può noleggiare o acquistare da Meta oltre 150 film in 3D, tra cui il film-concerto di…",
-   "testo": "Negli Stati Uniti, chi possiede Quest 3 o Quest 3S può noleggiare o acquistare da Meta oltre 150 film in 3D, tra cui il film-concerto di Billie Eilish *Hit Me Hard and Soft: The Tour*. Nella libreria dell'app TV ci sono anche *Avatar*, *Spider-Man: Far From Home*, *Jurassic World Rebirth* e *Wicked: For Good*. Il film-concerto, co-diretto da Billie Eilish e James Cameron, è disponibile solo a noleggio o acquisto in…",
-   "link": "https://oculandiavr.it/n/quest-3-3s-30468",
-   "link_corto": "oculandiavr.it/n/quest-3-3s-30468",
-   "img": 7,
-   "img_v": "076a5287"
-  },
-  {
-   "id": "meta-quest-3s-bfe90",
-   "titolo": "Meta Quest 3S: sconto del 15% per il Black Friday",
-   "data": "20 nov",
-   "cat": "Hardware",
-   "riga": "Per il Black Friday, Meta ha annunciato uno sconto del 15% su Quest 3S. Fino al 30 novembre, il modello da 128 GB costa 296,99 $, invece…",
-   "testo": "Per il Black Friday, Meta ha annunciato uno sconto del 15% su Quest 3S. Fino al 30 novembre, il modello da 128 GB costa 296,99 $, invece di 349,99 $. Quello da 256 GB costa 381,99 $, con uno sconto di 68 $. Quest 3S è il visore VR più economico di Meta. Ha lo stesso chipset di Quest 3 e può eseguire tutti i suoi giochi.",
-   "link": "https://oculandiavr.it/n/meta-quest-3s-bfe90",
-   "link_corto": "oculandiavr.it/n/meta-quest-3s-bfe90",
-   "img": 8,
-   "img_v": "5de67de5"
-  },
-  {
-   "id": "smash-drums-tiny-73bf8",
-   "titolo": "Smash Drums: Tiny Drums arriva il 2 dicembre su Quest 3 e 3S",
-   "data": "19 nov",
-   "cat": "Hardware",
-   "riga": "Tiny Drums è una nuova modalità gratuita di Smash Drums, in arrivo a dicembre. Il gioco aggiungerà anche il supporto al tracciamento delle…",
-   "testo": "Tiny Drums è una nuova modalità gratuita di Smash Drums, in arrivo a dicembre. Il gioco aggiungerà anche il supporto al tracciamento delle mani su Quest 3, Quest 3S e Meta VR Glasses. Con l’aggiornamento gratuito Tiny Drums, si potrà suonare con la punta delle dita su batterie in miniatura in un’esperienza di realtà mista. L’aggiornamento arriverà su Meta Quest 3 e 3S il 2 dicembre. Sarà disponibile anche sui…",
-   "link": "https://oculandiavr.it/n/smash-drums-tiny-73bf8",
-   "link_corto": "oculandiavr.it/n/smash-drums-tiny-73bf8",
-   "img": 9,
-   "img_v": "31ef7d4c"
   }
  ]
 }
