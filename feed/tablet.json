@@ -1,28 +1,13 @@
 {
  "v": 1,
- "generato": "2026-11-23T23:53:26+0100",
- "aggiornato": "23 nov · 23:53",
+ "generato": "2026-11-24T07:54:25+0100",
+ "aggiornato": "24 nov · 07:54",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
   "news": 10
  },
  "eventi": [
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261123",
-   "titolo": "Anime Night",
-   "quando": "lun 23 nov · 21:00",
-   "giorno": "2026-11-23",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 10,
-   "img_v": "c709ef7b"
-  },
   {
    "id": "sports-2026-uefa-champions-league-manchester-city-napoli-de…",
    "titolo": "Manchester City – Napoli",
@@ -32,7 +17,7 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "UEFA Champions League. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-champions-league-manchester-city-napoli-de77f5f5",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-champions-league-manchester-city-napoli-de77f5f5",
    "img": 1,
@@ -186,6 +171,21 @@
    "link": "https://oculandiavr.it/events?tipo=film",
    "link_corto": "oculandiavr.it/events?tipo=film",
    "img": 12,
+   "img_v": "c709ef7b"
+  },
+  {
+   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261221",
+   "titolo": "Anime Night",
+   "quando": "lun 21 dic · 21:00",
+   "giorno": "2026-12-21",
+   "ora": "21:00",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/events?tipo=film",
+   "link_corto": "oculandiavr.it/events?tipo=film",
+   "img": 10,
    "img_v": "c709ef7b"
   }
  ],
