@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-25T03:59:42+0100",
- "aggiornato": "25 nov · 03:59",
+ "generato": "2026-11-25T13:38:07+0100",
+ "aggiornato": "25 nov · 13:38",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -191,6 +191,18 @@
  ],
  "news": [
   {
+   "id": "phasmophobia-corregge-in-5867d",
+   "titolo": "Phasmophobia corregge interazioni VR e aggiunge un preset per Steam Deck",
+   "data": "25 nov",
+   "cat": "Software",
+   "riga": "L’aggiornamento gratuito Resonance di Phasmophobia è uscito il 24 novembre: aggiunge un preset grafico per Steam Deck, nuove attrezzature…",
+   "testo": "L’aggiornamento gratuito Resonance di Phasmophobia è uscito il 24 novembre: aggiunge un preset grafico per Steam Deck, nuove attrezzature per la caccia ai fantasmi e il passaggio a Unity 6. L’aggiornamento include anche correzioni per chi gioca in VR. Le note elencano una correzione per le fotocamere, che non si potevano usare in VR mentre si teneva un altro oggetto nella mano destra. Le note correggono anche aree…",
+   "link": "https://oculandiavr.it/n/phasmophobia-corregge-in-5867d",
+   "link_corto": "oculandiavr.it/n/phasmophobia-corregge-in-5867d",
+   "img": 5,
+   "img_v": "0c9519a1"
+  },
+  {
    "id": "walkabout-mini-golf-7ffa0",
    "titolo": "Walkabout Mini Golf: Valhalla Splash arriva il 3 dicembre",
    "data": "24 nov",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/cyberpunk-2077-vr-1e858",
    "img": 4,
    "img_v": "b9d14293"
-  },
-  {
-   "id": "steam-frame-beta-c9295",
-   "titolo": "Steam Frame: la beta regola la vibrazione per gioco e migliora lo streaming",
-   "data": "21 nov",
-   "cat": "Hardware",
-   "riga": "L’ultima beta del software di sistema di Steam Frame permette di regolare la vibrazione dei controller per ciascun gioco. L’aggiornamento…",
-   "testo": "L’ultima beta del software di sistema di Steam Frame permette di regolare la vibrazione dei controller per ciascun gioco. L’aggiornamento aggiunge anche un controllo globale per la nitidezza dello schermo e modifiche per migliorare la trasmissione video da un PC. Le nuove impostazioni e correzioni sono ancora in fase di test e non sono state distribuite a tutti tramite il canale stabile. Valve segnala anche meno…",
-   "link": "https://oculandiavr.it/n/steam-frame-beta-c9295",
-   "link_corto": "oculandiavr.it/n/steam-frame-beta-c9295",
-   "img": 5,
-   "img_v": "ea278d9a"
   }
  ]
 }
