@@ -1,28 +1,13 @@
 {
  "v": 1,
- "generato": "2026-11-24T07:54:25+0100",
- "aggiornato": "24 nov · 07:54",
+ "generato": "2026-11-25T03:59:42+0100",
+ "aggiornato": "25 nov · 03:59",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
   "news": 10
  },
  "eventi": [
-  {
-   "id": "sports-2026-uefa-champions-league-manchester-city-napoli-de…",
-   "titolo": "Manchester City – Napoli",
-   "quando": "mar 24 nov · 21:00",
-   "giorno": "2026-11-24",
-   "ora": "21:00",
-   "tipo": "Sport",
-   "dove": "Bigscreen",
-   "testo": "UEFA Champions League. Calendario Oculandia su Bigscreen.",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-champions-league-manchester-city-napoli-de77f5f5",
-   "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-champions-league-manchester-city-napoli-de77f5f5",
-   "img": 1,
-   "img_v": "a32b31d7"
-  },
   {
    "id": "sports-2026-uefa-champions-league-inter-stuttgart-d885a8ee",
    "titolo": "Inter – Stuttgart",
@@ -32,7 +17,7 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "UEFA Champions League. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-champions-league-inter-stuttgart-d885a8ee",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-champions-league-inter-stuttgart-d885a8ee",
    "img": 2,
@@ -47,7 +32,7 @@
    "tipo": "Sport",
    "dove": "Bigscreen",
    "testo": "UEFA Champions League. Calendario Oculandia su Bigscreen.",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-champions-league-paris-saint-germain-roma-1c2d7d4c",
    "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-champions-league-paris-saint-germain-roma-1c2d7d4c",
    "img": 6,
@@ -99,6 +84,21 @@
    "img_v": "964f4309"
   },
   {
+   "id": "sports-2026-f1-qatar-qualifying-89235ec0",
+   "titolo": "Formula 1 · GP Qatar · Qualifiche",
+   "quando": "sab 28 nov · 19:00",
+   "giorno": "2026-11-28",
+   "ora": "19:00",
+   "tipo": "Sport",
+   "dove": "Bigscreen",
+   "testo": "Qualifiche di Formula 1, Lusail International Circuit. Calendario Oculandia su Bigscreen.",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=sports-2026-f1-qatar-qualifying-89235ec0",
+   "link_corto": "oculandiavr.it/evento?id=sports-2026-f1-qatar-qualifying-89235ec0",
+   "img": 1,
+   "img_v": "f6b45484"
+  },
+  {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261130",
    "titolo": "Anime Night",
    "quando": "lun 30 nov · 21:00",
@@ -112,6 +112,21 @@
    "link_corto": "oculandiavr.it/events?tipo=film",
    "img": 11,
    "img_v": "c709ef7b"
+  },
+  {
+   "id": "aspettando-doomsday-endgame-extra-20261201",
+   "titolo": "Avengers: Endgame Extra",
+   "quando": "mar 1 dic · 20:15",
+   "giorno": "2026-12-01",
+   "ora": "20:15",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=aspettando-doomsday-endgame-extra-20261201",
+   "link_corto": "oculandiavr.it/evento?id=aspettando-doomsday-endgame-extra-20261201",
+   "img": 10,
+   "img_v": "52d27d7b"
   },
   {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261207",
@@ -172,24 +187,21 @@
    "link_corto": "oculandiavr.it/events?tipo=film",
    "img": 12,
    "img_v": "c709ef7b"
-  },
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261221",
-   "titolo": "Anime Night",
-   "quando": "lun 21 dic · 21:00",
-   "giorno": "2026-12-21",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": false,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 10,
-   "img_v": "c709ef7b"
   }
  ],
  "news": [
+  {
+   "id": "walkabout-mini-golf-7ffa0",
+   "titolo": "Walkabout Mini Golf: Valhalla Splash arriva il 3 dicembre",
+   "data": "24 nov",
+   "cat": "Hardware",
+   "riga": "Il DLC Valhalla Splash, ultimo percorso dell’anno per Walkabout Mini Golf, sarà disponibile sulle piattaforme supportate il 3 dicembre…",
+   "testo": "Il DLC Valhalla Splash, ultimo percorso dell’anno per Walkabout Mini Golf, sarà disponibile sulle piattaforme supportate il 3 dicembre. Valhalla Splash arriverà il 3 dicembre su Quest, PC VR, Galaxy XR e PlayStation VR2. Mighty Coconut ha annunciato che Escape from Planet Xylodon, uscito a ottobre, sarà l’ultimo nuovo percorso pubblicato per i visori PICO. I percorsi fino a Escape from Planet Xylodon resteranno…",
+   "link": "https://oculandiavr.it/n/walkabout-mini-golf-7ffa0",
+   "link_corto": "oculandiavr.it/n/walkabout-mini-golf-7ffa0",
+   "img": 6,
+   "img_v": "386a0f89"
+  },
   {
    "id": "black-white-vr-a3156",
    "titolo": "Black & White VR Mod aggiunge un libro degli incantesimi in alpha",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/steam-frame-beta-c9295",
    "img": 5,
    "img_v": "ea278d9a"
-  },
-  {
-   "id": "beta-steamvr-2-d02f5",
-   "titolo": "La beta di SteamVR 2.19.4 migliora lo streaming PC VR e la scelta della GPU in Steam Link",
-   "data": "21 nov",
-   "cat": "Hardware",
-   "riga": "L’ultima beta di SteamVR punta a rendere più affidabile lo streaming video in PC VR con schede grafiche Nvidia e AMD. Valve afferma che…",
-   "testo": "L’ultima beta di SteamVR punta a rendere più affidabile lo streaming video in PC VR con schede grafiche Nvidia e AMD. Valve afferma che, sui portatili con due GPU, Steam Link sceglierà quella più potente, salvo che nelle impostazioni grafiche di Windows sia stata indicata una preferenza per SteamVR. Le modifiche sono incluse nella beta di SteamVR 2.19.4. Steam Link per Meta Quest aggiunge il supporto al chroma key…",
-   "link": "https://oculandiavr.it/n/beta-steamvr-2-d02f5",
-   "link_corto": "oculandiavr.it/n/beta-steamvr-2-d02f5",
-   "img": 6,
-   "img_v": "ea3e528c"
   }
  ]
 }
