@@ -1,7 +1,7 @@
 {
  "v": 1,
- "generato": "2026-11-25T13:38:07+0100",
- "aggiornato": "25 nov · 13:38",
+ "generato": "2026-11-25T23:25:20+0100",
+ "aggiornato": "25 nov · 23:25",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
@@ -129,6 +129,21 @@
    "img_v": "52d27d7b"
   },
   {
+   "id": "aspettando-doomsday-x-men-20261202",
+   "titolo": "X-Men: Giorni di un futuro passato",
+   "quando": "mer 2 dic · 20:45",
+   "giorno": "2026-12-02",
+   "ora": "20:45",
+   "tipo": "Film",
+   "dove": "Bigscreen",
+   "testo": "",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=aspettando-doomsday-x-men-20261202",
+   "link_corto": "oculandiavr.it/evento?id=aspettando-doomsday-x-men-20261202",
+   "img": 12,
+   "img_v": "56c79273"
+  },
+  {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261207",
    "titolo": "Anime Night",
    "quando": "lun 7 dic · 21:00",
@@ -172,24 +187,21 @@
    "link_corto": "discord.gg/MNbn9usjm9",
    "img": 4,
    "img_v": "2932aff5"
-  },
-  {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261214",
-   "titolo": "Anime Night",
-   "quando": "lun 14 dic · 21:00",
-   "giorno": "2026-12-14",
-   "ora": "21:00",
-   "tipo": "Film",
-   "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
-   "in_corso": false,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 12,
-   "img_v": "c709ef7b"
   }
  ],
  "news": [
+  {
+   "id": "virtual-desktop-aggiunge-81cc4",
+   "titolo": "Virtual Desktop aggiunge Terrace e rimuove il workaround per Quest 3 e 3S",
+   "data": "25 nov",
+   "cat": "Hardware",
+   "riga": "L’ultimo aggiornamento di Virtual Desktop aggiunge Terrace, un bar sul tetto virtuale con vista su New York dove guardare uno schermo…",
+   "testo": "L’ultimo aggiornamento di Virtual Desktop aggiunge Terrace, un bar sul tetto virtuale con vista su New York dove guardare uno schermo. Secondo il creatore Guy Godin, l’app non ha più bisogno del workaround per il calo del frame rate su Quest 3 e 3S: Meta avrebbe risolto il problema di fondo il 23 novembre. La modifica non è stata verificata con misurazioni indipendenti e il suo effetto può variare tra…",
+   "link": "https://oculandiavr.it/n/virtual-desktop-aggiunge-81cc4",
+   "link_corto": "oculandiavr.it/n/virtual-desktop-aggiunge-81cc4",
+   "img": 4,
+   "img_v": "eeb638fe"
+  },
   {
    "id": "phasmophobia-corregge-in-5867d",
    "titolo": "Phasmophobia corregge interazioni VR e aggiunge un preset per Steam Deck",
@@ -297,18 +309,6 @@
    "link_corto": "oculandiavr.it/n/mod-vr-metal-1af8a",
    "img": 3,
    "img_v": "2017a832"
-  },
-  {
-   "id": "cyberpunk-2077-vr-1e858",
-   "titolo": "Cyberpunk 2077 VR: mani fisiche e sterzata in moto con i controller",
-   "data": "21 nov",
-   "cat": "Software",
-   "riga": "L’ultimo aggiornamento della mod VR non ufficiale di Cyberpunk 2077 aggiunge mani basate sulla fisica e permette di sterzare in moto…",
-   "testo": "L’ultimo aggiornamento della mod VR non ufficiale di Cyberpunk 2077 aggiunge mani basate sulla fisica e permette di sterzare in moto usando i controller tracciati e i movimenti del corpo. La versione 0.2.45 corregge un HUD lampeggiante sui runtime diversi da SteamVR. La mod resta un progetto non ufficiale per PC, non una modalità VR nativa annunciata da CD Projekt Red. I requisiti indicati dal progetto includono la…",
-   "link": "https://oculandiavr.it/n/cyberpunk-2077-vr-1e858",
-   "link_corto": "oculandiavr.it/n/cyberpunk-2077-vr-1e858",
-   "img": 4,
-   "img_v": "b9d14293"
   }
  ]
 }
