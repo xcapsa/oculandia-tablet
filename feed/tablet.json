@@ -1,43 +1,13 @@
 {
  "v": 1,
- "generato": "2026-11-26T05:19:43+0100",
- "aggiornato": "26 nov · 05:19",
+ "generato": "2026-11-27T00:15:21+0100",
+ "aggiornato": "27 nov · 00:15",
  "img_base": "https://xcapsa.github.io/oculandia-tablet/feed/img/",
  "caselle": {
   "eventi": 12,
   "news": 10
  },
  "eventi": [
-  {
-   "id": "sports-2026-uefa-europa-league-olympiacos-milan-dee3800f",
-   "titolo": "Olympiacos – Milan",
-   "quando": "gio 26 nov · 18:45",
-   "giorno": "2026-11-26",
-   "ora": "18:45",
-   "tipo": "Sport",
-   "dove": "Bigscreen",
-   "testo": "UEFA Europa League. Calendario Oculandia su Bigscreen.",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-europa-league-olympiacos-milan-dee3800f",
-   "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-europa-league-olympiacos-milan-dee3800f",
-   "img": 7,
-   "img_v": "219a9ad0"
-  },
-  {
-   "id": "sports-2026-uefa-europa-league-juventus-omonia-98802aff",
-   "titolo": "Juventus – Omonia",
-   "quando": "gio 26 nov · 21:00",
-   "giorno": "2026-11-26",
-   "ora": "21:00",
-   "tipo": "Sport",
-   "dove": "Bigscreen",
-   "testo": "UEFA Europa League. Calendario Oculandia su Bigscreen.",
-   "in_corso": true,
-   "link": "https://oculandiavr.it/evento?id=sports-2026-uefa-europa-league-juventus-omonia-98802aff",
-   "link_corto": "oculandiavr.it/evento?id=sports-2026-uefa-europa-league-juventus-omonia-98802aff",
-   "img": 8,
-   "img_v": "93e37b6d"
-  },
   {
    "id": "aspettando-doomsday-infinity-war-20261127",
    "titolo": "Avengers: Infinity War",
@@ -47,7 +17,7 @@
    "tipo": "Film",
    "dove": "Bigscreen",
    "testo": "",
-   "in_corso": false,
+   "in_corso": true,
    "link": "https://oculandiavr.it/evento?id=aspettando-doomsday-infinity-war-20261127",
    "link_corto": "oculandiavr.it/evento?id=aspettando-doomsday-infinity-war-20261127",
    "img": 9,
@@ -99,6 +69,36 @@
    "img_v": "5f69c76e"
   },
   {
+   "id": "sports-2026-f1-qatar-race-0f81dee0",
+   "titolo": "Formula 1 · GP Qatar · Gara",
+   "quando": "dom 29 nov · 17:00",
+   "giorno": "2026-11-29",
+   "ora": "17:00",
+   "tipo": "Sport",
+   "dove": "Bigscreen",
+   "testo": "Gara di Formula 1, Lusail International Circuit. Calendario Oculandia su Bigscreen.",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=sports-2026-f1-qatar-race-0f81dee0",
+   "link_corto": "oculandiavr.it/evento?id=sports-2026-f1-qatar-race-0f81dee0",
+   "img": 5,
+   "img_v": "07c09da8"
+  },
+  {
+   "id": "sports-2026-serie-a-roma-monza-d9f7f14e",
+   "titolo": "Roma – Monza",
+   "quando": "dom 29 nov · 18:00",
+   "giorno": "2026-11-29",
+   "ora": "18:00",
+   "tipo": "Sport",
+   "dove": "Bigscreen",
+   "testo": "Serie A. Calendario Oculandia su Bigscreen.",
+   "in_corso": false,
+   "link": "https://oculandiavr.it/evento?id=sports-2026-serie-a-roma-monza-d9f7f14e",
+   "link_corto": "oculandiavr.it/evento?id=sports-2026-serie-a-roma-monza-d9f7f14e",
+   "img": 7,
+   "img_v": "8d95daa5"
+  },
+  {
    "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261130",
    "titolo": "Anime Night",
    "quando": "lun 30 nov · 21:00",
@@ -144,19 +144,19 @@
    "img_v": "56c79273"
   },
   {
-   "id": "series-9a6988cc-2a5c-4f9c-8bd7-cd3c58ef6870-20261207",
-   "titolo": "Anime Night",
-   "quando": "lun 7 dic · 21:00",
-   "giorno": "2026-12-07",
-   "ora": "21:00",
+   "id": "aspettando-doomsday-deadpool-wolverine-20261203",
+   "titolo": "Deadpool & Wolverine",
+   "quando": "gio 3 dic · 20:45",
+   "giorno": "2026-12-03",
+   "ora": "20:45",
    "tipo": "Film",
    "dove": "Bigscreen",
-   "testo": "IL LUNEDÌ SERA HA UN NUOVO LIVELLO! Preparate i visori, accendete gli schermi e unitevi alla ciurma! Ogni lunedì dalle 21:00 su Bigscreen nella stanza Oculandia, ci viviamo un'altra grande sfida insieme con i migliori anime del momento…",
+   "testo": "",
    "in_corso": false,
-   "link": "https://oculandiavr.it/events?tipo=film",
-   "link_corto": "oculandiavr.it/events?tipo=film",
-   "img": 5,
-   "img_v": "c709ef7b"
+   "link": "https://oculandiavr.it/evento?id=aspettando-doomsday-deadpool-wolverine-20261203",
+   "link_corto": "oculandiavr.it/evento?id=aspettando-doomsday-deadpool-wolverine-20261203",
+   "img": 8,
+   "img_v": "d42f8b04"
   },
   {
    "id": "atlasgate-beat-saber-2026-12",
